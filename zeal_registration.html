@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <!--Responsive Web Design-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <title>Registration Form </title>
+    <link rel="icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/main.css">
+	</head>
+
+<body>
+    <header>
+        <nav>
+		<a href="#">Staff</a>
+		<a href="#">Alternatives</a>
+		<a href="INDEX.html">Whole Body Approach</a>
+		<a href="therapy.html">Therapy</a>
+		<a href="zeal_registration.html">Book Now!</a>
+		<a class="active zeal" href="index.html">ZEAL</a>
+
+	</nav>
+		<section class="hero">
+			<img src="img/ban6.jpg">
+		</section>
+    </header>   
+    <main>
+         <section class="container">
+             <h1>Registration Form</h1>
+             <form action="register_account.html" method="get"
+        		name="registration" id="registration">
+        		
+    			<fieldset id="registration_form">
+	        		<legend>Member Information</legend>
+	        		<label for="email">E-Mail:</label>
+	        		<input type="email" name="email" id="email" autofocus required><br>
+	                <label for="first_name">First Name:</label>
+					<input type="text" name="first_name" id="first_name" required><br>
+					<label for="last_name">Last Name:</label>
+					<input type="text" name="last_name" id="last_name" required><br>
+					<label for="address">Address:</label>
+					<input type="text" name="address" id="address"><br>
+					<label for="city">City:</label>
+					<input type="text" name="city" id="city" required><br>
+					<label for="state">State:</label>
+					<input type="text" name="state" id="state" required maxlength="2" placeholder="2-character code"><br>
+					<label for="zip">ZIP Code:</label>
+					<input type="text" name="zip" id="zip" required placeholder="5 or 9 digits" 
+				           pattern="^\d{5}(-\d{4})?$" title="Either 5 or 9 digits"><br>
+					<label for="phone">Phone Number:</label>
+					<input type="tel" name="phone" id="phone" placeholder="999-999-9999" 
+				       	   pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Must be 999-999-999 format"><br>
+	            </fieldset>
+	            
+				<fieldset id="submit_form">
+					<legend>Submit</legend>
+					<label>&nbsp;</label>
+					<input type="submit" id="submit" value="Submit">
+					<input type="reset" id="reset" value="Reset Fields"><br>
+				</fieldset>
+             </form>   
+         </section>   
+    </main>
+   
+    <footer>
+        <p>&copy; Jocelyn Baduria Group1 Project Dec 2018, Las Positas College, Livermore, CA 94550</p>
+    </footer>
+</body>
+
+</html>

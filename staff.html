@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Staff -- Zeal: Holistic Chiropractors</title>
+    <link rel="stylesheet" href="css/staff.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+</head>
+<body>
+<header>
+    <nav>
+        <a href="#">Staff</a>
+        <a href="#">Alternatives</a>
+        <a href="#">Treatments</a>
+        <a href="#">Therapy</a>
+        <a href="#">Book Now!</a>
+        <a class="active zeal" href="#home">ZEAL</a>
+    </nav>
+    <section class="hero">
+        <img src="img/ban6.jpg">
+    </section>
+</header>
+<h1>Meet Our Staff</h1>
+<h2>Passionate About the Whole You</h2>
+<section id="staff-profiles">
+    <div class="container-fluid main-wrap" id="app">
+
+        <div class="line" v-bind:class="{ 'line-after' : isActive }"></div>
+
+        <div class="profile-modal-before" v-bind:class="{ 'profile-modal-after' : isActive }" v-on:click="isActive = !isActive">
+            <div class="profile-picture-before" v-bind:class="{ 'profile-picture-after' : isActive }"></div>
+            <div class="profile-content">
+                <div>
+                    <h2>{{ name }}</h2>
+                    <h3>{{ details }}</h3>
+                    <p>{{ about }}</p>
+                    <a href="www.google.com" target="blank">
+                        <div class="follow-button">
+                            <p>Follow</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="line" v-bind:class="{ 'line-after' : isActive }"></div>
+
+    </div>
+</section>
+<footer>
+    <p>&copy; Thomas Leon Highbaugh Group1 Project Dec 2018, Las Positas College, Livermore, CA 94550</p>
+</footer>
+</body>
+</html>

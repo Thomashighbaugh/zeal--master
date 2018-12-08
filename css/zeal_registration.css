@@ -1,0 +1,208 @@
+/*This is the generalized style sheet for the resurgens sites // tem[plate */
+*{
+    margin: 0;
+    padding: 0 ;
+    border: 0 ;
+}
+
+html{
+    overflow-x: hidden;
+    font-family: "Roboto Material Black", monospace;
+    clear-after: bottom;
+    background:whitesmoke;
+    margin: 0;
+    color: #1f2833;
+    }
+
+header{
+    padding: 3em;
+    margin: 0;
+    text-align: justify;
+    background-color: #743160;
+}
+
+nav {
+    overflow: hidden;
+    background-color: #f2d3e9;
+    display: compact;
+    margin-top: 0;
+}
+nav a{
+    float: right;
+    color: solid black;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+    font-size: 2em;
+    border: 1px solid #bbb;
+    margin-top:0.2em;
+
+}
+nav a:hover{
+    color:#332F61;
+    background-color: whitesmoke;
+}
+.zeal{
+    float: left;
+    color: solid black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2em;
+    padding: 1em;
+    margin-bottom: 0.3em;
+    border:0;
+}
+
+main{
+    height: 35px;
+    width:70%;
+}
+
+body {
+    text-align: center;
+    background:#D9CEB2;
+    width: 95px;
+    margin: 0 auto;
+}
+form {
+    display: inline-block;
+    height: 100vh;
+}
+
+/* Registration Form Design */
+
+fieldset {
+   /* margin-top: 1em;*/
+    margin-bottom: .5em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-right: 1em;
+    padding-left: 1em;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+legend {
+    color: #081B2A;
+    font-weight: bold;
+    font-size: 125%;
+    margin-bottom: .5em;
+}
+label, input, select {
+	font-size: 100%;
+}
+input:required, input[required] {
+	border: 2px solid #800000;
+}
+input:valid {
+	border: 1px solid black;
+}
+input:invalid {
+	box-shadow: none;
+    border: 2px solid #800000;
+}
+input[type="radio"]:checked{
+    box-shadow: 0 0 0 3px orange;
+}
+
+/* used to create a new line  */
+br {
+    clear: both;
+}
+
+/* Registration Input Design*/
+#registration_form input
+{
+    width: 15em;
+    margin-left: .5em;
+    margin-bottom: .5em;
+}
+#registration_form select
+{
+    margin-left: .5em;
+    margin-bottom: .5em;
+}
+
+#registration_form label
+{
+    float: left;
+    width: 12em;
+    text-align: right;
+}
+/* submit Form Design*/
+#submit_form input {
+    margin-left: .5em;
+	width: 10em;
+    margin-bottom: .5em;
+}
+
+#submit_form label
+{
+    float: left;
+    width: 2em;
+    text-align: right;
+}
+
+/* the styles for the section */
+section {
+	width: 525px;
+	float: center;
+	padding: 0px 10px 20px 20px;
+    margin-left: 250px;
+}
+section h1 {
+	font-size: 250%;
+	color: #800000;
+	padding: .5em 0 .25em 0;
+	margin: 0;
+}
+
+/* Responsive Design*/
+/* tablet portrait to standard 960 */
+@media only screen and (max-width: 959px) {
+	section h1 { font-size: 135%; }
+	section h2, aside h2 { font-size: 120%; }
+}
+
+/* mobile landscape to tablet portrait */
+@media only screen and (max-width: 767px) {
+	header img { float: none; }
+	header { text-align: center; }
+    main{flex-direction: column;}
+	section {
+        order:1;
+		float: none;
+		width: 95%;                     /* 100 - (2 x 2.5) for padding */
+	}
+    
+    #nav_menu {
+		display: none;
+	}
+	#mobile_menu {
+		display: block;
+	}
+	.slicknav_menu {
+		background-color: #800000 !important;
+	}
+}
+
+/* mobile portrait to mobile landscape */
+@media only screen and (max-width: 479px) {
+	body { font-size: 90%; }
+}
+
+/*Footer*/
+footer{
+    clear:both;
+    height:20%;
+    width:100%;
+    outline: #332F61 1px solid;
+    margin-top: 3em;
+    padding: 1em;
+    background-color: #332F61;
+    color:whitesmoke;
+}
+footer ul {
+    display: inline-flex;
+}
