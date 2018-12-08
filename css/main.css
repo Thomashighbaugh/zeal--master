@@ -104,7 +104,7 @@ nav a:hover {
   width: 100% !important;
   border:0;
   padding: 0;
-  margin: 0;
+    margin-bottom: 15em;
   max-height: 200px;
 }
 
@@ -113,7 +113,9 @@ nav a:hover {
   max-height: 200px;
   border:0;
   padding: 0;
-  margin: 0;
+  margin-bottom: 10em;
+    clear: both;
+    position: absolute;
 }
 
 
@@ -125,13 +127,17 @@ nav a:hover {
   font-size:4em;
   letter-spacing:0.5em;
   text-align: center;
-  color:#f5f5f5;
+  color:#081B2A;
 }
 .page-title{
   font-weight: 700;
+    display: block;
+    background-color: #bbbbbb;
+
 }
 .page-title h2{
-  background-color: ;
+  background-color: #081B2A;
+    color:#f2f2f2;
 }
 main{
   width:70%;
@@ -139,6 +145,7 @@ main{
   font-size: larger;
   outline:#202636 2px solid;
   background-color: #bbbbbb;
+    margin:1%
 
 }
 
@@ -147,6 +154,7 @@ main{
   color:#081B2A;
   padding: 3%;
   margin: 1%;
+    outline: #081B2A solid 2px;
 
 }
 .art2 {
@@ -160,7 +168,8 @@ main{
   color:#081B2A;
   padding: 3%;
   margin: 1%;
-  height: 20em;
+    outline: #081B2A solid 2px;
+
 }
 aside {
   text-align: left;
@@ -169,6 +178,7 @@ aside {
   outline: 2px solid #332F61;
   background-color: #bbbbbb;
   padding:1%;
+    margin-top: 1em;
 }
 aside section h4 {
   font-size: 1.2em;
@@ -298,9 +308,15 @@ br {
 }
 
 /***********************************************************************************************************************
-Section VI: Therapy Styling
+Section VI: Link Styling
 ************************************************************************************************************************/
-
+aside a {
+    color: #081B2A;
+}
+aside a:hover {
+    background-color: #081B2A;
+    color: #f2f2f2;
+}
 
 /***********************************************************************************************************************
 Section VII: Media Queries
