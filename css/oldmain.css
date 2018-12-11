@@ -1,0 +1,94 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  overflow-x: hidden;
+  font-family: "Roboto Material Black", monospace;
+  clear-after: bottom;
+  background: #F4ECFF;
+  margin: 0;
+
+  color: #1f2833;
+}
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 60em;
+  width: 70%;
+  float: left;
+  clear-after: bottom;
+  outline: #484554 5px double;
+}
+
+
+h1 {
+  font-size: 6em;
+  font-style: italic;
+  margin: 1%;
+  font-variant-caps: all-small-caps;
+}
+h2,
+h3 {
+  color: #484554;
+  font-style: italic;
+  margin: 1%;
+  font-variant-caps: all-small-caps;
+}
+
+header {
+  padding: auto;
+  margin: 0;
+  text-align: justify;
+}
+
+nav {
+  overflow: hidden;
+  background-color: #1f2833;
+  display: compact;
+  margin-top: 0;
+}
+nav a {
+  float: right;
+  color: #F4ECFF;
+  text-align: center;
+  padding: 1em;
+  text-decoration: none;
+  font-size: 2em;
+  border: 1px solid #bbb;
+  margin-top: 0.2em;
+}
+
+
+
+.zeal {
+  float: left;
+  color: #F4ECFF;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2em;
+  padding: 1em;
+  margin-bottom: 0.3em;
+}
+
+.hero {
+  padding-bottom: 30px;
+  justify-content: center;
+  width: 100% !important;
+  border: 0;
+}
+
+.hero > img {
+  width: 100%;
+  margin-left: 0;
+}
+
+
+

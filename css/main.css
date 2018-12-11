@@ -1,200 +1,738 @@
 /**********************************************************************************************************************
-
   Authors: Group 1
   Project: Zeal
   File: Main Stylesheet
   Notes: This stylesheet serves as a template for the everyone's individual contributions
          When the project is complete all sheets will be collated and this section will reflect as much
-
   Section I : General Styling
 **********************************************************************************************************************/
-
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
+*{
+    margin: 0;
+    padding: 0 ;
+    border: 0 ;
 }
 
-html {
-  overflow-x: hidden;
-  font-family: "Roboto Material Black", monospace;
-  clear-after: bottom;
-  background: #F4ECFF;
-  margin: 0;
-
-  color: #1f2833;
-}
-body {
-  height: 100%;
-  width: 100%;
-}
-
-main {
-  height: 60em;
-  width: 70%;
-  float: left;
-  clear-after: bottom;
-  outline: #484554 5px double;
-}
+html{
+    overflow-x: hidden;
+    font-family: "Roboto Material Black", monospace;
+    clear-after: bottom;
+    background:#BCB5D3;
+    margin-top: 35px;
+    margin-left: 35px;
+    }
 
 /*********************************************************************************************************************
   Section II: Header And Navigation Styling
   ********************************************************************************************************************/
-h1 {
-  font-size: 6em;
-  font-style: italic;
-  margin: 1%;
-  font-variant-caps: all-small-caps;
+header{
+    padding-bottom: 0.5em;
+    margin: 0;
+    text-align: center;
+    background-color:#202636;
 }
-h2,
-h3 {
-  color: #484554;
-  font-style: italic;
-  margin: 1%;
-  font-variant-caps: all-small-caps;
+header img{
+    width:100%;
+    max-height: 200px !important;
 }
-
-header {
-  padding: auto;
-  margin: 0;
-  text-align: justify;
+.slicknav_menu{
+    display: none;
 }
 
 nav {
-  overflow: hidden;
-  background-color: #1f2833;
-  display: compact;
-  margin-top: 0;
+    overflow: hidden;
+    background-color:#202636;
+    display: compact;
+    margin-top: 0;
 }
-nav a {
-  float: right;
-  color: #F4ECFF;
-  text-align: center;
-  padding: 1em;
-  text-decoration: none;
-  font-size: 2em;
-  border: 1px solid #bbb;
-  margin-top: 0.2em;
+nav a{
+
+    float: left;
+    color: #f2d3e9;
+    background-color: #202636;
+    margin-top:0.2em;
+    width:14%;
+display: inline-block;
+    height: 100%;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 0.25em;
+    margin-bottom: 0.3em;
+    border:0;
+
 }
 nav a:hover {
-  color: #332f61;
-  background-color: #F4ECFF;
+    color: #332f61;
+    background-color: #F4ECFF;
 }
-
-
-.zeal {
-  float: left;
-  color: #F4ECFF;
-  text-align: center;
-  text-decoration: none;
-  font-size: 2em;
-  padding: 1em;
-  margin-bottom: 0.3em;
+.zeal{
+    float: right;
+    text-align: center;
+    text-decoration: none;
+    font-size: 3em;
+    margin-bottom: 0.3em;
+    border:0;
 }
-
-.hero {
-  padding-bottom: 30px;
-  justify-content: center;
-  width: 100% !important;
-  border: 0;
-}
-
-.hero > img {
-  width: 100%;
-  margin-left: 0;
-}
-
 
 /**********************************************************************************************************************
   Section III:Content Styling
   **********************************************************************************************************************/
 
+main{
+    height: 35em;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width:1000px;
+    margin-left: 7em;
+    margin-right: 7em;
+    border: 3px #1f2833;
+    text-align: center;
+    background-color:#D0B6E1;
+    color: #202636;
+}
+
+
 
 #art1 {
-  background-color: darkslateblue;
-  padding: 3%;
-  margin: 1%;
-  height: 20em;
+
+    padding: 3%;
+    margin: 1%;
+    height: 20em;
 }
 #art2 {
-  background-color: darkgoldenrod;
-  padding: 3%;
-  margin: 1%;
-  height: 15em;
+
+    padding: 3%;
+    margin: 1%;
+    height: 15em;
 }
 #art3 {
-  background-color: lightskyblue;
-  padding: 3%;
-  margin: 1%;
-  height: 20em;
+
+    padding: 3%;
+    margin: 1%;
+    height: 20em;
 }
 aside {
-  width: 30%;
-  float: right;
-  outline: #1f2833 double 1px;
-  height: 100%;
-  background-color: #bbbbbb;
+    width: 30%;
+    float: right;
+    outline: #1f2833 double 1px;
+    height: 100%;
+    background-color: #bbbbbb;
 }
 aside section h4 {
-  font-size: 1.2em;
-  margin: 2%;
-  padding: 2%;
+    font-size: 1.2em;
+    margin: 2%;
+    padding: 2%;
 }
 #archive {
-  background-color: lightsalmon;
-  color: #1f2833;
+    background-color: lightsalmon;
+    color: #1f2833;
 }
 aside section img {
-  padding: 10%;
-  width: 85%;
-  max-height: border-box;
-  background-color: #bbbbbb;
-  margin-bottom: 5%;
+    padding: 10%;
+    width: 85%;
+    max-height: border-box;
+    background-color: #bbbbbb;
+    margin-bottom: 5%;
 }
 #social {
-  background-color: #787586;
-  color: #F4ECFF;
-  height: 18em;
+    background-color: #787586;
+    color: #F4ECFF;
+    height: 18em;
 }
+
+
+/***********************************************************************************************************************
+Form Styling
+***********************************************************************************************************************/
+
+form {
+    margin-top: 0;
+    display: inline-block;
+    height: 0;
+}
+
+
+fieldset {
+   /* margin-top: 1em;*/
+    margin-bottom: .5em;
+    padding: .5em 1em;
+    border-bottom: 2px solid #202636;
+    border-top: 2px solid #202636;
+    border-right: 2px solid #202636;
+    border-left: 2px solid #202636;
+}
+legend {
+    color: #202636;
+    font-weight: bold;
+    font-size: 125%;
+    margin-bottom: .5em;
+}
+label, input, select {
+	font-size: 100%;
+}
+input:required, input[required] {
+	border: 2px solid #800000;
+}
+input:valid {
+	border: 1px solid #202636;
+}
+input:invalid {
+	box-shadow: none;
+    border: 2px solid #800000;
+}
+input[type="radio"]:checked{
+    box-shadow: 0 0 0 3px orange;
+}
+
+/* used to create a new line  */
+br {
+    clear: both;
+}
+
+/* Registration Input Design*/
+#registration_form input
+{
+    width: 15em;
+    margin-left: .5em;
+    margin-bottom: .5em;
+}
+#registration_form select
+{
+    margin-left: .5em;
+    margin-bottom: .5em;
+}
+
+#registration_form label
+{
+    float: left;
+    width: 12em;
+    text-align: right;
+}
+/* submit Form Design*/
+#submit_form input {
+    margin-left: .5em;
+	width: 10em;
+    margin-bottom: .5em;
+}
+
+#submit_form label
+{
+    float: left;
+    width: 2em;
+    text-align: right;
+}
+
+/*********************************************************************************************************************
+Section Styling
+********************************************************************************************************************/
+section {
+	width: 100%;
+	align-self: center;
+    justify-self: center;
+	padding: 0 10px 20px 20px;
+    margin-left: 0;
+}
+section h1{
+	padding: .5em 0 .25em 0;
+	margin: 0;
+    text-align: center;
+    font-style: normal;
+    color:#202636;
+    background-color: #f2d3e9;
+    float: left;
+    clear: both;
+
+}
+section h3{
+	font-size: 120%;
+	padding-bottom: 5em;
+	margin: 0;
+}
+
+/*Footer*/
+footer {
+    clear: both;
+    height: 10%;
+    width: 98%;
+    outline: #332F61 1px solid;
+    margin-top: 36em;
+    padding: 1%;
+    background-color: #332F61;
+    color: whitesmoke;
+}
+#contact{
+    display:none;
+
+}
+
+footer p {
+    display: block;
+}
+/**********************************************************************************************************************
+Media Queries
+*/
 
 /**********************************************************************************************************************
-  Section : Footer Styling
+Up to 959px
 ************************************************************************************************************************/
+@media only screen and (max-width: 959px) {
+    .js #menu {
+        display:none;
+    }
 
-footer {
-  clear: both;
-  height: 20%;
-  width: 100%;
-  outline: #332f61 1px solid;
-  margin-top: 3em;
-  padding: 1em;
-  background-color: #332f61;
-  color: #F4ECFF;
+    .js .slicknav_menu {
+        display:block;
+    }
+
+    html{
+      max-width: 959px;
+      border:0;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+  }
+    body{
+        max-width: 959px;
+        overflow-x: hidden;
+        font-family: "Roboto Material Black", monospace;
+        clear-after: bottom;
+        float: left;
+        display: block;
+        margin:0;
+        padding: 0;
+
+    }
+    .zeal{
+        color:#f2d3e9;
+        margin-right: 2em;
+    }
+    nav a {
+        width: 100%;
+        display: block;
+        margin-top: 3%;
+        color: #f2d3e9;
+        float: left;
+        text-align: left;
+    }
+
+    section h1 {
+        font-size: 250%;
+        padding: .5em 0 .25em 0;
+        margin: 0;
+    }
+
+    section h3 {
+        font-size: 120%;
+        padding: .5em 0 .25em 0;
+        margin: 0;
+    }
+
+    /* the styles for the section */
+    section {
+        display: block;
+        width: 100%;
+        align-self: center;
+        padding: 0;
+        margin-left: 0;
+    }
+
+    main {
+        flex-wrap: wrap;
+        float: left;
+        height: 100%;
+        margin-left: 1em;
+    }
+
+    form{
+        float: left;
+        clear: both;
+    }
+
+    fieldset {
+        padding: .5em 1em;
+        border-bottom: 2px solid #202636;
+        border-top: 2px solid #202636;
+        border-right: 2px solid #202636;
+        border-left: 2px solid #202636;
+    }
+
+    legend {
+        flex-wrap: wrap;
+        color: #202636;
+        font-weight: bold;
+        font-size: 125%;
+        margin-bottom: .5em;
+    }
+
+    label, input {
+        word-wrap: break-word;
+        font-size: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    input:required, input[required] {
+        border: 2px solid #800000;
+    }
+
+    input:valid {
+        border: 1px solid #202636;
+    }
+
+    input:invalid {
+        box-shadow: none;
+        border: 2px solid #800000;
+    }
+
+    input[type="radio"]:checked {
+        box-shadow: 0 0 0 3px orange;
+    }
+
+    /* used to create a new line  */
+    br {
+        clear: both;
+    }
+
+    /* Registration Input Design*/
+    section{
+        float: left;
+        height: 100%;
+        width: 100%;
+    }
+    #registration_form{
+        float: left;
+        width:100%;
+    }
+    #submit_form{
+        float: left;
+        width:100%;
+    }
+    #booking_form{
+        float: left;
+        width:120%;
+    }
+    #registration_form input {
+        width: 12em;
+        margin-left: .5em;
+        margin-bottom: .5em;
+    }
+
+    #registration_form select {
+        margin-bottom: .5em;
+    }
+
+    #registration_form label {
+        float: left;
+        width: 12em;
+        text-align: right;
+    }
+
+    /* submit Form Design*/
+    #submit_form input {
+        float: left;
+        margin-left: .5em;
+        width: 10em;
+        margin-bottom: .5em;
+        height:2em;
+    }
+
+    #submit_form label {
+        width: 2em;
+        height:2em;
+    }
+    #booking_form{
+        width:100%;
+    }
+
+    footer {
+        clear: both;
+        height: 15%;
+        margin-top: 100%;
+        overflow: auto;
+        font-size: x-small;
+        text-align: left;
+
+    }
 }
-footer ul {
-  display: inline-flex;
+/**********************************************************************************************************************
+Up to 797px
+************************************************************************************************************************/
+@media only screen and (max-width: 767px) {
+     body{
+        width:100%;    
+        overflow-x: hidden;
+        font-family: "Roboto Material Black", monospace;
+        clear-after: bottom;
+        margin-top: 2%;
+         display: block;
+        float: left;
+    }
+    .js #menu {
+        display:none;
+    }
+
+    .js .slicknav_menu {
+        display:block;
+    }
+    nav a{
+        float: left;
+        align-self: flex-start;
+        justify-self: self-start;
+    }
+
+    section h1 {
+	    font-size: 250%;
+        color: #202636;
+        padding: .5em 0 .25em 0;
+        margin: 0;
+    }
+    section h3 {
+	    font-size: 120%;
+        color: #202636;
+        margin: 5em;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    /* the styles for the section */
+    section{
+        float: left;
+        width:100%;
+        height: 100%;
+    }
+    #registration_form{
+        float: left;
+        width:100%;
+    }
+    #submit_form{
+        float: left;
+        width:100%;
+    }
+    #booking_form{
+        float: left;
+        width:120%;
+    }
+    main {
+        flex-wrap: wrap;
+        /*width:100%;*/
+        height: 1em;
+        flex-direction: row;
+    }
+
+    header {
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    form {
+        display: inline-block;
+        height: 100%;
+        width: 65%;
+        justify-content: center;
+        margin-right: 0;
+    }
+
+
+    br {
+        clear: both;
+    }
+
+    /* Registration Input Design*/
+    #registration_form input
+    {
+        width: 15em;
+        margin-left: .5em;
+        margin-bottom: .5em;
+    }
+    #registration_form select
+    {
+        margin-left: .5em;
+        margin-bottom: .5em;
+    }
+
+    #registration_form label
+    {
+        float: left;
+        width: 12em;
+        text-align: right;
+    }
+
+    footer p {
+        display: block;
+    }
+    #mobile {
+    display: block;
+    }
+    
+
 }
-footer ul li {
-  box-sizing: border-box;
-  list-style: none;
-  margin: 1em;
-  width: 15%;
+/**********************************************************************************************************************
+Up to 479px
+************************************************************************************************************************/
+@media only screen and (max-width: 479px) {
+    body {
+        width: 100%;
+        overflow-x: hidden;
+        font-family: "Roboto Material Black", monospace;
+        clear-after: bottom;
+        margin: 0;
+
+    }
+    #nav h1 {
+        font-size: 2.5em;
+    }
+
+    #nav h3 {
+        font-size: 1.20em;
+    }
+
+    .zeal {
+        float: left;
+        color: #f2d3e9;
+        text-align: left;
+        text-decoration: none;
+        font-size: 5em;
+        padding: 0.25em;
+        margin-bottom: 0.3em;
+        border: 0;
+    }
+
+    section h1 {
+        font-size: 250%;
+        color: #202636;
+        padding: .5em 0 .25em 0;
+        margin: 0;
+    }
+
+    section h3 {
+        font-size: 120%;
+        color: #202636;
+        padding: 5em;
+        text-align: center;
+    }
+
+    /* the styles for the section */
+
+
+    main {
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: row;
+    }
+
+
+    section{
+        float: left;
+        width:100%;
+        height: 100%;
+    }
+    #registration_form{
+        float: left;
+        width:100%;
+    }
+    #submit_form{
+        float: left;
+        width:100%;
+    }
+    #booking_form{
+        float: left;
+        width:120%;
+    }
+    header {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-right: 20px;
+    }
+
+
+    fieldset {
+        flex-wrap: wrap;
+        margin: 20%;
+        padding: .5em 1em;
+        border-bottom: 2px solid #202636;
+        border-top: 2px solid #202636;
+        border-right: 2px solid #202636;
+        border-left: 2px solid #202636;
+    }
+
+    legend {
+        flex-wrap: wrap;
+        color: #202636;
+        font-weight: bold;
+        font-size: 125%;
+        margin-bottom: .5em;
+    }
+
+    label, input {
+        word-wrap: break-word;
+        font-size: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    input:required, input[required] {
+        border: 2px solid #202636;
+    }
+
+    input:valid {
+        border: 1px solid #202636;
+    }
+
+    input:invalid {
+        box-shadow: none;
+        border: 2px solid #202636;
+    }
+
+    input[type="radio"]:checked {
+        box-shadow: 0 0 0 3px orange;
+    }
+
+    /* used to create a new line  */
+    br {
+        clear: both;
+    }
+
+    /* Registration Input Design*/
+    #registration_form input {
+        width: 15em;
+        margin-left: .5em;
+        margin-bottom: .5em;
+    }
+
+    #registration_form select {
+        margin-left: .5em;
+        margin-bottom: .5em;
+    }
+
+    #registration_form label {
+        float: left;
+        width: 10em;
+        text-align: right;
+    }
+
+    /* submit Form Design*/
+    #submit_form input {
+        margin-left: .5em;
+        width: 15.25em;
+        margin-bottom: .5em;
+    }
+
+    #submit_form label {
+        float: left;
+        width: 2em;
+        text-align: right;
+    }
+    footer{
+        display: none;
+    }
+
 }
-footer ul li a {
-  color: #585b56;
-  justify-self: auto;
-}
-footer ul li a:hover {
-  color: #F4ECFF;
-  justify-self: auto;
-  pointer-events: stroke;
-}
-footer ul li a:active {
-  color: #F4ECFF;
-  justify-self: auto;
-  pointer-events: bounding-box;
-}
-footer ul li a:visited {
-  color: orange;
-  justify-self: auto;
-}
+
+    
+
