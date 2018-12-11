@@ -13,7 +13,18 @@ html{
     margin: 0;
     color: #1f2833;
     }
-
+h1{
+    font-size: 3em;
+    font-style: normal;
+    margin:1%;
+    font-variant-caps: all-small-caps;}
+h3 {
+    font-size: 1.45em;
+    color:solid black;
+    font-style: Bold;
+    margin:1%;
+    font-variant-caps: all-small-caps;}
+    
 header{
     padding: 3em;
     margin: 0;

@@ -1,0 +1,719 @@
+/*This is the generalized style sheet for the resurgens sites // tem[plate */
+*{
+    margin: 0;
+    padding: 0 ;
+    border: 0 ;
+}
+
+html{
+    overflow-x: hidden;
+    font-family: "Roboto Material Black", monospace;
+    clear-after: bottom;
+    background:whitesmoke;
+    margin-top: 35px;
+    margin-left: 35px;
+    }
+h1{
+    text-align: center;
+    font-size:3em;
+    font-style: normal;
+    margin:1%;
+    font-variant-caps: all-small-caps;}
+
+header{
+    padding-bottom: 0.5em;
+    margin: 0;
+    text-align: center;
+    background-color: #743160;
+}
+
+nav {
+    overflow: hidden;
+    background-color: #f2d3e9;
+    display: compact;
+    margin-top: 0;
+}
+nav a{
+    float: right;
+    color: solid black;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+    font-size: 2em;
+    border: 1px solid #bbb;
+    margin-top:0.2em;
+
+}
+nav a:hover{
+    color:#332F61;
+    background-color: whitesmoke;
+}
+.zeal{
+    float: left;
+    color: solid black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 3em;
+    padding: 0.25em;
+    margin-bottom: 0.3em;
+    border:0;
+}
+
+main{
+    height: 35em;
+    /*width:70%;*/
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width:1000px;
+    margin-left: 7em;
+    margin-right: 7em;
+    /*border: 3px #1f2833;*/
+    text-align: center;
+    background-color:#D9CEB2;
+}
+form {
+    margin-top: 0%;
+    display: inline-block;
+    height: 0px;
+}
+
+/* Registration Form Design */
+
+fieldset {
+   /* margin-top: 1em;*/
+    margin-bottom: .5em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-right: 1em;
+    padding-left: 1em;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+legend {
+    color: #081B2A;
+    font-weight: bold;
+    font-size: 125%;
+    margin-bottom: .5em;
+}
+label, input, select {
+	font-size: 100%;
+}
+input:required, input[required] {
+	border: 2px solid #800000;
+}
+input:valid {
+	border: 1px solid black;
+}
+input:invalid {
+	box-shadow: none;
+    border: 2px solid #800000;
+}
+input[type="radio"]:checked{
+    box-shadow: 0 0 0 3px orange;
+}
+
+/* used to create a new line  */
+br {
+    clear: both;
+}
+
+/* Registration Input Design*/
+#registration_form input
+{
+    width: 15em;
+    margin-left: .5em;
+    margin-bottom: .5em;
+}
+#registration_form select
+{
+    margin-left: .5em;
+    margin-bottom: .5em;
+}
+
+#registration_form label
+{
+    float: left;
+    width: 12em;
+    text-align: right;
+}
+/* submit Form Design*/
+#submit_form input {
+    margin-left: .5em;
+	width: 10em;
+    margin-bottom: .5em;
+}
+
+#submit_form label
+{
+    float: left;
+    width: 2em;
+    text-align: right;
+}
+
+/* the styles for the section */
+section {
+	width: 100%;
+	float: center;
+	padding: 0px 10px 20px 20px;
+    margin-left: 0%;
+}
+section h1{
+	font-size: 250%;
+	color: #800000;
+	padding: .5em 0 .25em 0;
+	margin: 0em;
+}
+section h3{
+	font-size: 120%;
+	color: #800000;
+	padding-bottom: 5em;
+	margin: 0em;
+}
+
+/*Footer*/
+footer {
+    clear:both;
+    width:98%;
+    outline: #332F61 1px solid;
+    margin-top: 10%;
+    padding: 10%;
+    background-color: #332F61;
+    color:whitesmoke;*/
+}
+footer p {
+    clear: both;
+    text-align: center;
+}
+#mobile {
+    display: none;
+}
+
+
+/* media queries */
+
+/* tablet portrait to standard 960 */
+@media only screen and (max-width: 959px) {
+    html{
+        width:100%;    
+        overflow-x: hidden;
+        font-family: "Roboto Material Black", monospace;
+        clear-after: bottom;
+        background:whitesmoke;
+        margin: 0;
+
+    }
+    #nav a {
+	    font-size: 3em;
+    }
+    #nav h1{
+        font-size: 2.5em;
+    }
+    #nav h3{
+        font-size: 1.20em;
+    }
+    .zeal{
+        float: left;
+        color: solid black;
+        text-align: left;
+        text-decoration: none;
+        font-size: 5em;
+        padding: 0.25em;
+        margin-bottom: 0.3em;
+        border:0;
+    }
+    section h1 {
+	    font-size: 250%;
+        color: #800000;
+        padding: .5em 0 .25em 0;
+        margin: 0;
+    }
+    section h3 {
+	    font-size: 120%;
+        color: #800000;
+        padding: .5em 0 .25em 0;
+        margin: 0;
+    }
+    /* the styles for the section */
+    section {
+        display: block;
+        width: 100%;
+        float: center;
+        padding: 0px;
+        margin-left: 0px;
+    }
+    main {
+        flex-wrap: wrap;}
+        /*width:100%;
+        height: 1em;
+        flex-direction: row;
+    }
+    body {
+        background: white;
+	    width: 90%;
+	    margin-left: 10px;
+	    border: solid black;
+    }
+    header {
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    /*header, /*footer {
+        flex-wrap: wrap;
+        
+    }
+    form {
+        display: inline-block;
+        height: 100%;
+        width: 50%;
+        justify-content: center;
+        margin-right: 20px;
+    }*/
+
+    /* Registration Form Design */
+
+   fieldset {
+        margin: 20%
+        padding-top: .5em;
+        padding-bottom: .5em;
+        padding-right: 1em;
+        padding-left: 1em;
+        border-bottom: 2px solid black;
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+        border-left: 2px solid black;
+    }
+    legend {
+        flex-wrap: wrap;
+        color: #081B2A;
+        font-weight: bold;
+        font-size: 125%;
+        margin-bottom: .5em;
+    }
+    label, input {
+       word-wrap: break-word;
+        font-size: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    input:required, input[required] {
+        border: 2px solid #800000;
+    }
+    input:valid {
+        border: 1px solid black;
+    }
+    input:invalid {
+        box-shadow: none;
+        border: 2px solid #800000;
+    }
+    input[type="radio"]:checked{
+        box-shadow: 0 0 0 3px orange;
+    }
+
+    /* used to create a new line  */
+    br {
+        clear: both;
+    }
+
+    /* Registration Input Design*/
+    #registration_form input
+    {
+        width: 15em;
+        margin-left: .5em;
+        margin-bottom: .5em;
+    }
+    #registration_form select
+    {
+        margin-left: .5em;
+        margin-bottom: .5em;
+    }
+
+    #registration_form label
+    {
+        float: left;
+        width: 12em;
+        text-align: right;
+    }
+    /* submit Form Design*/
+    #submit_form input {
+        margin-left: .5em;
+        width: 10em;
+        margin-bottom: .5em;
+    }
+
+    #submit_form label
+    {
+        float: left;
+        width: 2em;
+        text-align: right;
+    }
+    footer{
+        clear:both;
+        height:10%;
+        width:98%;
+        outline: #332F61 1px solid;
+        margin-top: 95%;
+        padding: 1%;*
+        background-color: #332F61;
+        color:whitesmoke;
+    }
+        footer p {
+        display: block;
+    }*/
+    
+}
+
+/* mobile landscape to tablet portrait */
+@media only screen and (max-width: 767px) {
+     html{
+        width:100%;    
+        overflow-x: hidden;
+        font-family: "Roboto Material Black", monospace;
+        clear-after: bottom;
+        background:whitesmoke;
+        margin: 0;
+
+    }
+    #nav a {
+	    font-size: 3em;
+    }
+    #nav h1{
+        font-size: 2.5em;
+    }
+    #nav h3{
+        font-size: 1.20em;
+    }
+    .zeal{
+        float: left;
+        color: solid black;
+        text-align: left;
+        text-decoration: none;
+        font-size: 5em;
+        padding: 0.25em;
+        margin-bottom: 0.3em;
+        border:0;
+    }
+    section h1 {
+	    font-size: 250%;
+        color: #800000;
+        padding: .5em 0 .25em 0;
+        margin: 0;
+    }
+    section h3 {
+	    font-size: 120%;
+        color: #800000;
+        margin: 5em;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    /* the styles for the section */
+    section {
+        display: block;
+        width: 100%;
+        float: center;
+        padding: 0px;
+        margin-left: 0px;
+    }
+    main {
+        flex-wrap: wrap;
+        /*width:100%;*/
+        height: 1em;
+        flex-direction: row;
+    }
+    body {
+        background: white;
+	    width: 95%;
+	    margin-left: 10px;
+	    border: solid black;
+    }
+    header {
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    form {
+        display: inline-block;
+        height: 100%;
+        width: 65%;
+        justify-content: center;
+        margin-right: 0px;
+    }
+
+    /* Registration Form Design */
+
+   /*fieldset {
+        margin: 20%;
+        padding-top: 0em;
+        padding-bottom: 0em;
+        padding-right: 0em;
+        padding-left: 1em;
+        border-bottom: 2px solid black;
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+        border-left: 2px solid black;
+    }
+    legend {
+        flex-wrap: wrap;
+        color: #081B2A;
+        font-weight: bold;
+        font-size: 125%;
+        margin-bottom: .5em;
+    }
+    label, input {
+       word-wrap: break-word;
+        font-size: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    input:required, input[required] {
+        border: 2px solid #800000;
+    }
+    input:valid {
+        border: 1px solid black;
+    }
+    input:invalid {
+        box-shadow: none;
+        border: 2px solid #800000;
+    }
+    input[type="radio"]:checked{
+        box-shadow: 0 0 0 3px orange;
+    }*/
+
+    /* used to create a new line  */
+    br {
+        clear: both;
+    }
+
+    /* Registration Input Design*/
+    #registration_form input
+    {
+        width: 15em;
+        margin-left: .5em;
+        margin-bottom: .5em;
+    }
+    #registration_form select
+    {
+        margin-left: .5em;
+        margin-bottom: .5em;
+    }
+
+    #registration_form label
+    {
+        float: left;
+        width: 12em;
+        text-align: right;
+    }
+    /* submit Form Design*/
+    /*#submit_form input {
+        margin-left: .5em;
+        width: 10em;
+        margin-bottom: .5em;
+    }
+
+    #submit_form label
+    {
+        float: left;
+        width: 2em;
+        text-align: right;
+    }
+    footer{
+        clear:both;
+        height:0%;
+        width:98%;
+        outline: #332F61 1px solid;
+        margin-top:99%;
+        padding: 1%;
+        background-color: #332F61;
+        color:whitesmoke;
+    }*/
+    footer p {
+        display: block;
+    }
+    #mobile {
+    display: block;
+    }
+    
+    .slicknav_menu {
+		background-color: #800000 !important;
+	}
+}
+
+/* mobile portrait to mobile landscape */
+@media only screen and (max-width: 479px) {
+   html{
+        width:100%;    
+        overflow-x: hidden;
+        font-family: "Roboto Material Black", monospace;
+        clear-after: bottom;
+        background:whitesmoke;
+        margin: 0;
+
+    }
+    #nav a {
+	    font-size: 3em;
+    }
+    #nav h1{
+        font-size: 2.5em;
+    }
+    #nav h3{
+        font-size: 1.20em;
+    }
+    .zeal{
+        float: left;
+        color: solid black;
+        text-align: left;
+        text-decoration: none;
+        font-size: 5em;
+        padding: 0.25em;
+        margin-bottom: 0.3em;
+        border:0;
+    }
+    section h1 {
+	    font-size: 250%;
+        color: #800000;
+        padding: .5em 0 .25em 0;
+        margin: 0;
+    }
+    section h3 {
+	    font-size: 120%;
+        color: #800000;
+        padding: 5em;
+        text-align: center;
+    }
+    /* the styles for the section */
+   section {
+        display: block;
+        width: 90%;
+        float: center;
+        padding: 0px;
+        margin-left: 0px;
+    }
+    main {
+        flex-wrap: wrap;
+        width:100%;
+        height: 1em;
+        flex-direction: row;
+    }*/
+    body {
+        background: white;
+	    width: 90%;
+	    margin-left: 10px;
+	    border: solid black;
+    }
+    header {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-right: 20px;
+    }
+    /*header, footer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    form {
+        display: inline-block;
+        height: 100%;
+        width: 50%;*/
+        
+    }*/
+
+    /* Registration Form Design */
+
+   fieldset {
+        margin: 20%
+        padding-top: .5em;
+        padding-bottom: .5em;
+        padding-right: 1em;
+        padding-left: 1em;
+        border-bottom: 2px solid black;
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+        border-left: 2px solid black;
+    }
+    legend {
+        flex-wrap: wrap;
+        color: #081B2A;
+        font-weight: bold;
+        font-size: 125%;
+        margin-bottom: .5em;
+    }
+    label, input {
+       word-wrap: break-word;
+        font-size: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    input:required, input[required] {
+        border: 2px solid #800000;
+    }
+    input:valid {
+        border: 1px solid black;
+    }
+    input:invalid {
+        box-shadow: none;
+        border: 2px solid #800000;
+    }
+    input[type="radio"]:checked{
+        box-shadow: 0 0 0 3px orange;
+    }
+
+    /* used to create a new line  */
+    br {
+        clear: both;
+    }
+
+    /* Registration Input Design*/
+    #registration_form input
+    {
+        width: 15em;
+        margin-left: .5em;
+        margin-bottom: .5em;
+    }
+    #registration_form select
+    {
+        margin-left: .5em;
+        margin-bottom: .5em;
+    }
+
+    #registration_form label
+    {
+        float: left;
+        width: 10em;
+        text-align: right;
+    }
+    /* submit Form Design*/
+    #submit_form input {
+        margin-left: .5em;
+        width: 15.25em;
+        margin-bottom: .5em;
+    }
+
+    #submit_form label
+    {
+        float: left;
+        width: 2em;
+        text-align: right;
+    }
+    footer{
+        clear:both;
+        height:10%;
+        width:98%;
+        outline: #332F61 1px solid;
+        margin-top: 160%;
+        padding: 1%;
+        background-color: #332F61;
+        color:whitesmoke;
+    }
+        footer p {
+        display: block;
+    }
+
+    
+}

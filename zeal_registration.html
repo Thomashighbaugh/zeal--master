@@ -7,27 +7,31 @@
     <!-- Favicon -->
     <title>Registration Form </title>
     <link rel="icon" href="favicon.ico">
-	<link rel="stylesheet" href="css/main.css">
-	</head>
+
+    <!-- Core Stylesheet -->
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link href="css/registration_form.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles/slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="js/jquery.slicknav.min.js"></script>
+	    <script type="text/javascript">
+    	$(document).ready(function(){
+			$('#nav').slicknav({prependTo:"#mobile"});
+    	});
+        </script>
+</head>
 
 <body>
     <header>
-        <nav>
-		<a href="#">Staff</a>
-		<a href="#">Alternatives</a>
-		<a href="INDEX.html">Whole Body Approach</a>
-		<a href="therapy.html">Therapy</a>
-		<a href="zeal_registration.html">Book Now!</a>
-		<a class="active zeal" href="index.html">ZEAL</a>
-
-	</nav>
-		<section class="hero">
-			<img src="img/ban6.jpg">
-		</section>
+        <nav id="mobile"></nav>
+	    <nav id="nav">
+            <a class="zeal" href="#home">ZEAL</a>
+                <h1>Holistic Therapy Booking Services</h1>
+        </nav>
     </header>   
     <main>
-         <section class="container">
-             <h1>Registration Form</h1>
+         <section>         
+             <h1>Registration</h1>
              <form action="register_account.html" method="get"
         		name="registration" id="registration">
         		
@@ -53,16 +57,40 @@
 				       	   pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Must be 999-999-999 format"><br>
 	            </fieldset>
 	            
+	            <h1>Booking Appointment</h1>
+	            <fieldset id="booking_form">
+	        		<legend>Services</legend>
+                        <input type="radio" name="services" id="acupuncture" value="Acupuncture"/>
+                        <label for="acupuncture">Acupuncture</label>
+                        
+                        <input type="radio" name="services" id="bodymassage"  value="Body Massage"/>
+                        <label for="bodymassage">Body Massage</label>  
+                        
+                        <input type="radio" name="services" id="chiropractic"  value="Chiropractic"/>
+                        <label for="chiropractic">Chiropractic</label>  
+                        
+                        <input type="radio" name="services" id="physicaltherapy"  value="PhysicalTherapy"/>
+                        <label for="physicaltherapy">Physical Therapy</label> <br> 
+                        <br>
+                         Date:&nbsp;&nbsp;
+                        <input type="date" name="date">
+                         Time:&nbsp;&nbsp;
+                        <input type="time" name="time"><br><br>       
+	            </fieldset>
+	            <br>
 				<fieldset id="submit_form">
 					<legend>Submit</legend>
 					<label>&nbsp;</label>
 					<input type="submit" id="submit" value="Submit">
 					<input type="reset" id="reset" value="Reset Fields"><br>
 				</fieldset>
-             </form>   
+             </form>  
+             <br> 
+             <br>
+             <br>
+             <h3>Contact us at Email: zeal@holistic.com; Phone: 925-997-3273 </h3>
          </section>   
     </main>
-   
     <footer>
         <p>&copy; Jocelyn Baduria Group1 Project Dec 2018, Las Positas College, Livermore, CA 94550</p>
     </footer>

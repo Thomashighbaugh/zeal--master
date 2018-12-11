@@ -21,7 +21,7 @@ html {
   clear-after: bottom;
   background: #F4ECFF;
   margin: 0;
-  justify-self: center;
+
   color: #1f2833;
 }
 body {
@@ -34,35 +34,30 @@ main {
   width: 70%;
   float: left;
   clear-after: bottom;
-  margin-left: 5%;
+  outline: #484554 5px double;
 }
 
 /*********************************************************************************************************************
   Section II: Header And Navigation Styling
   ********************************************************************************************************************/
-h1{
-  font-size: 3em;
-  font-style: normal;
-  margin:1%;
+h1 {
+  font-size: 6em;
+  font-style: italic;
+  margin: 1%;
+  font-variant-caps: all-small-caps;
 }
-h2{
-  font-size: 2.45em;
-  color:black;
-  font-weight:900;
-  margin:1%;
-  font-variant-caps: all-small-caps;}
+h2,
 h3 {
-  font-size: 1.45em;
-  color: black;
-  font-weight:900;
-  margin:1%;
-  font-variant-caps: all-small-caps;}
+  color: #484554;
+  font-style: italic;
+  margin: 1%;
+  font-variant-caps: all-small-caps;
+}
 
 header {
   padding: auto;
   margin: 0;
-  text-align: center;
-  max-height: 200px;
+  text-align: justify;
 }
 
 nav {
@@ -70,17 +65,15 @@ nav {
   background-color: #1f2833;
   display: compact;
   margin-top: 0;
-
 }
 nav a {
   float: right;
   color: #F4ECFF;
   text-align: center;
-  padding: 0.5em;
+  padding: 1em;
   text-decoration: none;
-  overflow: hidden;
-  font-size: 1.6em;
-  border: 2px solid #bbb;
+  font-size: 2em;
+  border: 1px solid #bbb;
   margin-top: 0.2em;
 }
 nav a:hover {
@@ -93,301 +86,115 @@ nav a:hover {
   float: left;
   color: #F4ECFF;
   text-align: center;
-  font-size: 1.8em;
+  text-decoration: none;
+  font-size: 2em;
   padding: 1em;
   margin-bottom: 0.3em;
-  border:0;
 }
 
 .hero {
-   justify-content: center;
+  padding-bottom: 30px;
+  justify-content: center;
   width: 100% !important;
-  border:0;
-  padding: 0;
-    margin-bottom: 15em;
-  max-height: 200px;
+  border: 0;
 }
 
-.hero  img {
-  width: 100% !important;
-  max-height: 200px;
-  border:0;
-  padding: 0;
-  margin-bottom: 10em;
-    clear: both;
-    position: absolute;
+.hero > img {
+  width: 100%;
+  margin-left: 0;
 }
-
 
 
 /**********************************************************************************************************************
   Section III:Content Styling
   **********************************************************************************************************************/
-.page-title h1{
-  font-size:4em;
-  letter-spacing:0.5em;
-  text-align: center;
-  color:#081B2A;
-}
-.page-title{
-  font-weight: 700;
-    display: block;
-    background-color: #bbbbbb;
 
-}
-.page-title h2{
-  background-color: #081B2A;
-    color:#f2f2f2;
-}
-main{
-  width:70%;
-  text-align: justify;
-  font-size: larger;
-  outline:#202636 2px solid;
-  background-color: #bbbbbb;
-    margin:1%
 
-}
-
-.art1 {
-  background-color: #bbbbbb;
-  color:#081B2A;
+#art1 {
+  background-color: darkslateblue;
   padding: 3%;
   margin: 1%;
-    outline: #081B2A solid 2px;
-
+  height: 20em;
 }
-.art2 {
-  color: #bbbbbb;
-  background-color:#081B2A;
+#art2 {
+  background-color: darkgoldenrod;
   padding: 3%;
   margin: 1%;
+  height: 15em;
 }
-.art3 {
-  background-color: #bbbbbb;
-  color:#081B2A;
+#art3 {
+  background-color: lightskyblue;
   padding: 3%;
   margin: 1%;
-    outline: #081B2A solid 2px;
-
+  height: 20em;
 }
 aside {
-  text-align: left;
-  width: 20%;
+  width: 30%;
   float: right;
-  outline: 2px solid #332F61;
+  outline: #1f2833 double 1px;
+  height: 100%;
   background-color: #bbbbbb;
-  padding:1%;
-    margin-top: 1em;
 }
 aside section h4 {
   font-size: 1.2em;
   margin: 2%;
   padding: 2%;
 }
-#check-us{
-  margin-bottom: 5%;
-  background-color:#202636;
-  color:#f5f5f5;
-  text-align: center;
-  font-size:2em;
+#archive {
+  background-color: lightsalmon;
+  color: #1f2833;
 }
-#maps{
-  padding:5%;
+aside section img {
+  padding: 10%;
+  width: 85%;
+  max-height: border-box;
+  background-color: #bbbbbb;
+  margin-bottom: 5%;
 }
 #social {
   background-color: #787586;
   color: #F4ECFF;
   height: 18em;
 }
-p{
-  margin:5%;
-  text-indent: initial;
-}
+
 /**********************************************************************************************************************
-  Section IV: Footer Styling
+  Section : Footer Styling
 ************************************************************************************************************************/
 
-/*Footer*/
-footer{
-  clear:both;
-  height:20%;
-  width:100%;
-  outline: #c275ef 1px solid;
+footer {
+  clear: both;
+  height: 20%;
+  width: 100%;
+  outline: #332f61 1px solid;
   margin-top: 3em;
   padding: 1em;
-  background-color:#c275ef;http://localhost:63342/zeal-template-master/img/123.png
-  color:whitesmoke;
-  position:relative;
-  top:30em;
+  background-color: #332f61;
+  color: #F4ECFF;
 }
 footer ul {
   display: inline-flex;
 }
-
-/***********************************************************************************************************************
-Section V: Form Styling
-***********************************************************************************************************************/
-
-form {
-  display: inline-block;
-  outline: #c275ef 5px double;
-  margin-bottom: 5%;
-
-
+footer ul li {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 1em;
+  width: 15%;
 }
-
-fieldset {
-  /* margin-top: 1em;*/
-  margin-bottom: .5em;
-  padding: .5em 1em;
-  border-bottom: 2px solid black;
-  border-top: 2px solid black;
-  border-right: 2px solid black;
-  border-left: 2px solid black;
+footer ul li a {
+  color: #585b56;
+  justify-self: auto;
 }
-legend {
-  color:#202636;
-  font-weight: bold;
-  font-size: 125%;
-  margin-bottom: .5em;
+footer ul li a:hover {
+  color: #F4ECFF;
+  justify-self: auto;
+  pointer-events: stroke;
 }
-label, input, select {
-  font-size: 100%;
+footer ul li a:active {
+  color: #F4ECFF;
+  justify-self: auto;
+  pointer-events: bounding-box;
 }
-input:required, input[required] {
-  border: 2px solid #800000;
-}
-input:valid {
-  border: 1px solid black;
-}
-input:invalid {
-  box-shadow: none;
-  border: 2px solid ;
-}
-input[type="radio"]:checked{
-  box-shadow: 0 0 0 3px #c275ef;
-}
-
-/* used to create a new line  */
-br {
-  clear: both;
-}
-
-/* Registration Input Design*/
-#registration_form input
-{
-  width: 15em;
-  margin-left: .5em;
-  margin-bottom: .5em;
-}
-#registration_form select
-{
-  margin-left: .5em;
-  margin-bottom: .5em;
-}
-
-#registration_form label
-{
-  float: left;
-  width: 12em;
-  text-align: right;
-}
-/* submit Form Design*/
-#submit_form input {
-  margin-left: .5em;
-  width: 10em;
-  margin-bottom: .5em;
-}
-
-#submit_form label
-{
-  float: left;
-  width: 2em;
-  text-align: right;
-}
-
-/***********************************************************************************************************************
-Section VI: Link Styling
-************************************************************************************************************************/
-aside a {
-    color: #081B2A;
-}
-aside a:hover {
-    background-color: #081B2A;
-    color: #f2f2f2;
-}
-
-/***********************************************************************************************************************
-Section VII: Media Queries
-************************************************************************************************************************/
-/*Laptop */
-@media only screen and (max-width: 1200px) {
-
-}
-/*Tablet */
-@media only screen and (max-width: 768px) {
-  main{
-    width:100%;
-
-  }
-  aside {
-
-    width:100%;
-  }
-  #spine {
-    margin: 1em 0 0 0 ;
-  }
-  #vid{
-    margin: 1em 0 0 0;
-  }
-  nav a {
-    width: 100%;
-  }
-
-  h1 {
-    font-size: 3em;
-  }
-  footer ul li a {
-    width: 100%;
-
-  }
-
-}
-
-/*Phone */
-
-@media only screen
-and (min-device-width: 320px)
-and (max-device-width: 480px)
-and (-webkit-min-device-pixel-ratio: 2) {
-
-  #spine {
-    height: 18.750em;
-    width: 25em ;
-  }
-  iframe {
-    width: 25em;
-    height:18.750em;
-  }
-  h1{
-    font-size: 2em;
-  }
-  #art1 h4{
-    margin: 0;
-    font-size: 1.2em;
-  }
-  #art2 h4{
-    margin: 0;
-    font-size: 1.2em;
-  }
-  #art3 h4{
-    margin: 0;
-    font-size: 1.2em;
-  }
-  footer ul li a{
-    width: 100%;
-    display: block;
-  }
-
+footer ul li a:visited {
+  color: orange;
+  justify-self: auto;
 }
