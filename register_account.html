@@ -1,46 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <title>Registration Information</title>
 <style type="text/css">
-    @import "css/registration_form.css";
+    @import "register.css";
     dt {
         font-weight: bold;
     }
 </style>
 <script type="text/javascript">
 //<![CDATA[
-let decode = function (text) {
+var decode = function ( text ) {
     text = text.replace(/\+/g, " ");
-    text = text.replace(/%[a-fA-F0-9]{2}/g,
-        function (text) {
-            return String.fromCharCode("0x" + text.substr(1, 2));
+    text = text.replace(/%[a-fA-F0-9]{2}/g, 
+        function ( text ) {
+            return String.fromCharCode( "0x" + text.substr(1,2));
         }
     );
     return text;
-};
-
-let display_data = function () {
-    let query = location.search.replace("?", "");
-    if (query === "") return;
-
-    const fields = query.split("&");
-
-    if (fields.length === 0) {
+}
+    
+var display_data = function () {
+    var query = location.search.replace("?", "");
+    if ( query == "" ) return;
+    
+    var fields = query.split("&");
+    
+    if ( fields.length == 0 ) {
         document.write("<p>No data was submitted.</p>");
     } else {
         document.write("<dl>");
-        let field_parts;
-        for (let i in fields) {
+        var field_parts;
+        for ( var i in fields ) {
             field_parts = fields[i].split("=");
-            field_parts[0] = decode(field_parts[0]);
-            field_parts[1] = decode(field_parts[1]);
+            field_parts[0] = decode( field_parts[0] );
+            field_parts[1] = decode( field_parts[1] );
             document.write("<dt>" + field_parts[0] + "</dt>");
             document.write("<dd>" + field_parts[1] + "</dd>");
         }
         document.write("</dl>");
     }
-};
+}
 //]]>
 </script>
 </head>

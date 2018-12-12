@@ -1,738 +1,541 @@
 /**********************************************************************************************************************
-  Authors: Group 1
-  Project: Zeal
-  File: Main Stylesheet
-  Notes: This stylesheet serves as a template for the everyone's individual contributions
-         When the project is complete all sheets will be collated and this section will reflect as much
-  Section I : General Styling
-**********************************************************************************************************************/
-*{
-    margin: 0;
-    padding: 0 ;
-    border: 0 ;
+**********************************************************************************************************************
+Group 1
+MAIN Style Sheet
+***********************************************************************************************************************
+***********************************************************************************************************************/
+/***********************************************************************************************************************
+GENERAL STYLES
+************************************************************************************************************************/
+* {
+	margin: 0;
+	padding: 0;
 }
-
-html{
-    overflow-x: hidden;
-    font-family: "Roboto Material Black", monospace;
-    clear-after: bottom;
-    background:#BCB5D3;
-    margin-top: 35px;
-    margin-left: 35px;
-    }
-
-/*********************************************************************************************************************
-  Section II: Header And Navigation Styling
-  ********************************************************************************************************************/
-header{
-    padding-bottom: 0.5em;
-    margin: 0;
-    text-align: center;
-    background-color:#202636;
+html {
+	background-image: url("../images/back.png");
 }
-header img{
-    width:100%;
-    max-height: 200px !important;
-}
-.slicknav_menu{
-    display: none;
-}
-
-nav {
-    overflow: hidden;
-    background-color:#202636;
-    display: compact;
-    margin-top: 0;
-}
-nav a{
-
-    float: left;
-    color: #f2d3e9;
-    background-color: #202636;
-    margin-top:0.2em;
-    width:14%;
-display: inline-block;
-    height: 100%;
-    align-self: center;
-    justify-self: center;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.5em;
-    padding: 0.25em;
-    margin-bottom: 0.3em;
-    border:0;
-
-}
-nav a:hover {
-    color: #332f61;
-    background-color: #F4ECFF;
-}
-.zeal{
-    float: right;
-    text-align: center;
-    text-decoration: none;
-    font-size: 3em;
-    margin-bottom: 0.3em;
-    border:0;
-}
-
-/**********************************************************************************************************************
-  Section III:Content Styling
-  **********************************************************************************************************************/
-
-main{
-    height: 35em;
-}
-
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
-    width:1000px;
-    margin-left: 7em;
-    margin-right: 7em;
-    border: 3px #1f2833;
-    text-align: center;
-    background-color:#D0B6E1;
-    color: #202636;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	width: 98%; /* changed from 800 pixels */
+	max-width: 960px;
+	margin: 0 auto;
+	border: 3px solid #343a40;
+	background-image: -moz-linear-gradient(
+			30deg,
+			white 0%,
+			#c57af1 30%,
+			white 50%,
+			#c57af1 80%,
+			white 100%
+	);
+	background-image: -webkit-linear-gradient(
+			30deg,
+			white 0%,
+			#c57af1 30%,
+			white 50%,
+			#c57af1 80%,
+			white 100%
+	);
+	background-image: -o-linear-gradient(
+			30deg,
+			white 0%,
+			#c57af1 30%,
+			white 50%,
+			#c57af1 80%,
+			white 100%
+	);
+	background-image: linear-gradient(
+			30deg,
+			white 0%,
+			#c57af1 30%,
+			white 50%,
+			#c57af1 80%,
+			white 100%
+	);
 }
-
-
-
+a:focus,
+a:hover {
+	font-style: italic;
+}
+/* ********************************************************************************************************************'
+ HEADERS STYLING
+********************************************************************************************************************** */
+h1,
+h2,
+h3 {
+	background-color: #343a40;
+	color: #c57af1;
+}
+h1 {
+	font-size: 3em;
+	margin: 0;
+	border: 0;
+}
+h2 {
+	font-size: 175%;
+}
+h3 {
+	font-size: 130%;
+	font-style: italic;
+	padding: 3%;
+	border-bottom: #c57af1 5px solid;
+}
+/* ********************************************************************************************************************'
+ HEADERS STYLING
+********************************************************************************************************************** */
+header img {
+	float: left;
+	width: 100%;
+	max-height: 200px;
+}
+.shadow {
+	font-weight: 900;
+}
+/* the styles for the navigation menu */
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#nav_menu ul li {
+	float: left;
+	width: 25%;
+	border-bottom: #c57af1 5px solid;
+}
+#nav_menu ul li a {
+	display: block;
+	text-align: center;
+	padding: 1em 0 2em;
+	text-decoration: none;
+	background-color: #343a40;
+	color: #c57af1;
+	font-weight: bold;
+}
+#nav_menu a.current {
+	color: #cccccc;
+}
+#nav_menu ul ul {
+	width: 100%;
+	display: none;
+	position: absolute;
+	top: 100%;
+}
+#nav_menu ul ul li {
+	float: none;
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+/* the styles for the main content */
+main {
+	clear: left;
+}
+/* the styles for the section */
+section {
+	width: 65%;
+	float: right;
+	padding: 0 2.5% 20px 2.5%;
+}
+section h2 {
+	font-size: 150%;
+	padding: 0.5em 0 0.25em 0;
+	color: #343a40;
+	background: none;
+}
+section h3 {
+	color: #343a40;
+	font-size: 130%;
+	padding: 0.5em 0 0.25em 0;
+	background: none;
+}
+section p {
+	padding-bottom: 0.5em;
+}
+section blockquote {
+	padding: 0 2em;
+	font-style: italic;
+}
+section ul {
+	padding: 0 0 0.25em 1.25em;
+	list-style-type: circle;
+}
+section li {
+	padding-bottom: 0.35em;
+}
+/* the styles for the article */
+article {
+	padding: 0.5em 0;
+	border-top: 2px solid #343a40;
+	border-bottom: 2px solid #343a40;
+}
+article h2 {
+	padding-top: 0;
+}
+article h3 {
+	font-size: 105%;
+	padding-bottom: 0.25em;
+}
+article img {
+	float: right;
+	max-width: 40%;
+	min-width: 150px;
+	margin: 0.5em 0 1em 1em;
+	border: 1px solid black;
+}
+/* the styles for the aside */
+aside {
+	width: 25%;
+	float: left;
+	border-bottom: #c57af1 5px solid;
+	background-color: #343a40;
+}
+aside h2 {
+	color: #343a40;
+	font-size: 130%;
+	border-bottom: 0;
+}
+aside h3 {
+	border-bottom: 0;
+	font-size: 105%;
+	padding-bottom: 0.25em;
+}
+aside img {
+	padding: 2em;
+	width: 70%;
+	background: #343a40;
+}
+img {
+	width: 70%;
+}
+/* the styles for the footer */
+footer {
+	background-color: #343a40;
+	clear: both;
+}
+footer p {
+	text-align: center;
+	color: white;
+	padding: 1em 0;
+}
+#mobile_menu {
+	display: none;
+}
+form {
+	text-align: right;
+}
+#spine {
+	width: 462px;
+	margin: 50px 200px;
+}
 #art1 {
-
-    padding: 3%;
-    margin: 1%;
-    height: 20em;
+	padding: 3%;
+	margin: 1%;
+	height: 20em;
+}
+#art1 h4 {
+	margin: 0 0 1em 0;
+	font-size: 2em;
 }
 #art2 {
-
-    padding: 3%;
-    margin: 1%;
-    height: 15em;
+	padding: 3%;
+	margin: 1%;
+	height: 35em;
+}
+#art2 h4 {
+	margin: 0 0 1em 0;
+	font-size: 2em;
 }
 #art3 {
+	padding: 3%;
+	margin: 1%;
+	height: 35em;
+}
+#art3 h4 {
+	margin: 0 0 1em 0;
+	font-size: 2em;
+}
+/* ********************************************************************************************************************
+ALTERNATIVE/MENTAL HEALTH/tTHERAPIES STYLING
+NOTE: THIS STYLING IS DONE WITH ELEMENTS FROM FLEX BOX AND FEATURES THE SLICKNAV USED ELSEWHERE
+*********************************************************************************************************************** */
+.container {
+	display: flex; /* or inline-flex */
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: flex-start;
+	width: 95%;
+}
+.art1 {
+	width: 40%;
 
-    padding: 3%;
-    margin: 1%;
-    height: 20em;
+	padding: 4%;
+	order: 1;
+	clear: both;
+	float: right;
+	flex: 3 auto;
 }
-aside {
-    width: 30%;
-    float: right;
-    outline: #1f2833 double 1px;
-    height: 100%;
-    background-color: #bbbbbb;
+.art1 h2 {
+	font-size: 2em;
+	margin-bottom: 5%;
 }
-aside section h4 {
-    font-size: 1.2em;
-    margin: 2%;
-    padding: 2%;
+.art1 ul {
+	margin-top: 2em;
+	margin-bottom: 2em;
+	clear: both;
 }
-#archive {
-    background-color: lightsalmon;
-    color: #1f2833;
+.art2 {
+	width: 40%;
+	float: left;
+	margin: 2%;
+	padding: 1%;
+	flex: 3 auto;
+	order: 2;
+	display: inline-flex;
+	color: #c57af1;
+	background-color: #343a40;
+	clear: both;
 }
-aside section img {
-    padding: 10%;
-    width: 85%;
-    max-height: border-box;
-    background-color: #bbbbbb;
-    margin-bottom: 5%;
+.art2 h2 {
+	color: #c57af1;
 }
-#social {
-    background-color: #787586;
-    color: #F4ECFF;
-    height: 18em;
+.ment-banner {
+	float: left;
+	width: 100% !important;
+	padding: 5%;
+	margin-left: 20%;
 }
+.art2 h3 {
+	color: #c57af1;
+	padding-top: 2em;
+}
+.art2 a {
+	color: #f5f5f5;
+	margin-top: 2em;
+}
+.art3 {
+	width: 50%;
+	display: inline-flex;
+	float: left;
+	margin: 2%;
+	padding: 1%;
+	flex: 3 auto;
+	order: 3;
+	clear: both;
+}
+.art3 ul {
+	width: 75%;
 
-
-/***********************************************************************************************************************
-Form Styling
-***********************************************************************************************************************/
-
-form {
-    margin-top: 0;
-    display: inline-block;
-    height: 0;
+	text-align: left;
+	padding: 0;
+	margin-right: 0;
+	margin-left: 2%;
 }
-
-
-fieldset {
-   /* margin-top: 1em;*/
-    margin-bottom: .5em;
-    padding: .5em 1em;
-    border-bottom: 2px solid #202636;
-    border-top: 2px solid #202636;
-    border-right: 2px solid #202636;
-    border-left: 2px solid #202636;
+.opener {
+	background-color: #343a40;
+	width: 95%;
 }
-legend {
-    color: #202636;
-    font-weight: bold;
-    font-size: 125%;
-    margin-bottom: .5em;
-}
-label, input, select {
-	font-size: 100%;
-}
-input:required, input[required] {
-	border: 2px solid #800000;
-}
-input:valid {
-	border: 1px solid #202636;
-}
-input:invalid {
-	box-shadow: none;
-    border: 2px solid #800000;
-}
-input[type="radio"]:checked{
-    box-shadow: 0 0 0 3px orange;
-}
-
-/* used to create a new line  */
-br {
-    clear: both;
-}
-
-/* Registration Input Design*/
-#registration_form input
-{
-    width: 15em;
-    margin-left: .5em;
-    margin-bottom: .5em;
-}
-#registration_form select
-{
-    margin-left: .5em;
-    margin-bottom: .5em;
-}
-
-#registration_form label
-{
-    float: left;
-    width: 12em;
-    text-align: right;
-}
-/* submit Form Design*/
-#submit_form input {
-    margin-left: .5em;
-	width: 10em;
-    margin-bottom: .5em;
-}
-
-#submit_form label
-{
-    float: left;
-    width: 2em;
-    text-align: right;
-}
-
-/*********************************************************************************************************************
-Section Styling
-********************************************************************************************************************/
-section {
+.alt-text {
+	margin-top: 2.5em;
 	width: 100%;
 	align-self: center;
-    justify-self: center;
-	padding: 0 10px 20px 20px;
-    margin-left: 0;
+	text-align: right;
+	background-color: #343a40;
+	color: #c57af1;
+	height: 20%;
 }
-section h1{
-	padding: .5em 0 .25em 0;
+#say-it {
+	font-size: 3em;
+}
+.warm {
+	font-size: 2em;
+	font-weight: 900;
+	font-family: monospace;
+	color: #000000;
+}
+.bar-aside {
+	height: 35em;
+	color: #c57af1;
+	width: 35%;
+	border: #c57af1 2px solid;
+	flex: 3 auto;
+	margin: 2%;
+}
+.bar-aside blockquote {
+	margin: 3%;
+	padding: 3%;
+}
+.bar-aside h2 {
+	font-size: 1.5em;
+	color: #c57af1;
+	text-align: center;
+}
+.bar-aside a {
+	background-color: #f5f5f5;
+	color: #343a40;
+}
+.hero-alt {
+	width: 100%;
+	max-height: 200px;
 	margin: 0;
-    text-align: center;
-    font-style: normal;
-    color:#202636;
-    background-color: #f2d3e9;
-    float: left;
-    clear: both;
-
+	padding: 0;
 }
-section h3{
-	font-size: 120%;
-	padding-bottom: 5em;
+.therapy article {
+	height: 160em;
+	display: block;
+}
+table {
+	margin: 2em;
+	border-spacing: 0;
+	border: 2px solid yellow;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16);
+	border-radius: 2px;
+}
+th {
+	background: lightskyblue;
+	color: #fff;
+	border: 2px solid yellow;
+	padding-left: 0.3em;
+	padding-right: 0.3em;
+}
+#vid {
+	max-width: 400px;
+	margin: 5px 60px;
+}
+td {
+	border: 1px solid yellow;
+}
+.side-ther {
 	margin: 0;
+	padding: 0;
+	border: 0;
+	float: left;
 }
-
-/*Footer*/
-footer {
-    clear: both;
-    height: 10%;
-    width: 98%;
-    outline: #332F61 1px solid;
-    margin-top: 36em;
-    padding: 1%;
-    background-color: #332F61;
-    color: whitesmoke;
+#spine {
+	width: 100%;
 }
-#contact{
-    display:none;
-
+.f-right {
+	background: #343a40;
+	color: #c57af1;
+	float: right;
 }
-
-footer p {
-    display: block;
+.f-left {
+	background: #343a40;
+	color: #c57af1;
+	float: left;
 }
-/**********************************************************************************************************************
-Media Queries
-*/
-
-/**********************************************************************************************************************
-Up to 959px
-************************************************************************************************************************/
+/* ***********************************************************************************************************************************************************************************
+Media queries
+*************************************************************************************************************************************************************************************** */
 @media only screen and (max-width: 959px) {
-    .js #menu {
-        display:none;
-    }
-
-    .js .slicknav_menu {
-        display:block;
-    }
-
-    html{
-      max-width: 959px;
-      border:0;
-      margin: 0;
-      padding: 0;
-      height: 100%;
-  }
-    body{
-        max-width: 959px;
-        overflow-x: hidden;
-        font-family: "Roboto Material Black", monospace;
-        clear-after: bottom;
-        float: left;
-        display: block;
-        margin:0;
-        padding: 0;
-
-    }
-    .zeal{
-        color:#f2d3e9;
-        margin-right: 2em;
-    }
-    nav a {
-        width: 100%;
-        display: block;
-        margin-top: 3%;
-        color: #f2d3e9;
-        float: left;
-        text-align: left;
-    }
-
-    section h1 {
-        font-size: 250%;
-        padding: .5em 0 .25em 0;
-        margin: 0;
-    }
-
-    section h3 {
-        font-size: 120%;
-        padding: .5em 0 .25em 0;
-        margin: 0;
-    }
-
-    /* the styles for the section */
-    section {
-        display: block;
-        width: 100%;
-        align-self: center;
-        padding: 0;
-        margin-left: 0;
-    }
-
-    main {
-        flex-wrap: wrap;
-        float: left;
-        height: 100%;
-        margin-left: 1em;
-    }
-
-    form{
-        float: left;
-        clear: both;
-    }
-
-    fieldset {
-        padding: .5em 1em;
-        border-bottom: 2px solid #202636;
-        border-top: 2px solid #202636;
-        border-right: 2px solid #202636;
-        border-left: 2px solid #202636;
-    }
-
-    legend {
-        flex-wrap: wrap;
-        color: #202636;
-        font-weight: bold;
-        font-size: 125%;
-        margin-bottom: .5em;
-    }
-
-    label, input {
-        word-wrap: break-word;
-        font-size: 100%;
-        justify-content: center;
-        text-align: center;
-    }
-
-    input:required, input[required] {
-        border: 2px solid #800000;
-    }
-
-    input:valid {
-        border: 1px solid #202636;
-    }
-
-    input:invalid {
-        box-shadow: none;
-        border: 2px solid #800000;
-    }
-
-    input[type="radio"]:checked {
-        box-shadow: 0 0 0 3px orange;
-    }
-
-    /* used to create a new line  */
-    br {
-        clear: both;
-    }
-
-    /* Registration Input Design*/
-    section{
-        float: left;
-        height: 100%;
-        width: 100%;
-    }
-    #registration_form{
-        float: left;
-        width:100%;
-    }
-    #submit_form{
-        float: left;
-        width:100%;
-    }
-    #booking_form{
-        float: left;
-        width:120%;
-    }
-    #registration_form input {
-        width: 12em;
-        margin-left: .5em;
-        margin-bottom: .5em;
-    }
-
-    #registration_form select {
-        margin-bottom: .5em;
-    }
-
-    #registration_form label {
-        float: left;
-        width: 12em;
-        text-align: right;
-    }
-
-    /* submit Form Design*/
-    #submit_form input {
-        float: left;
-        margin-left: .5em;
-        width: 10em;
-        margin-bottom: .5em;
-        height:2em;
-    }
-
-    #submit_form label {
-        width: 2em;
-        height:2em;
-    }
-    #booking_form{
-        width:100%;
-    }
-
-    footer {
-        clear: both;
-        height: 15%;
-        margin-top: 100%;
-        overflow: auto;
-        font-size: x-small;
-        text-align: left;
-
-    }
+	section h1 {
+		font-size: 135%;
+	}
+	section h2,
+	aside h2 {
+		font-size: 120%;
+	}
 }
-/**********************************************************************************************************************
-Up to 797px
-************************************************************************************************************************/
+/* mobile landscape to tablet portrait */
 @media only screen and (max-width: 767px) {
-     body{
-        width:100%;    
-        overflow-x: hidden;
-        font-family: "Roboto Material Black", monospace;
-        clear-after: bottom;
-        margin-top: 2%;
-         display: block;
-        float: left;
-    }
-    .js #menu {
-        display:none;
-    }
-
-    .js .slicknav_menu {
-        display:block;
-    }
-    nav a{
-        float: left;
-        align-self: flex-start;
-        justify-self: self-start;
-    }
-
-    section h1 {
-	    font-size: 250%;
-        color: #202636;
-        padding: .5em 0 .25em 0;
-        margin: 0;
-    }
-    section h3 {
-	    font-size: 120%;
-        color: #202636;
-        margin: 5em;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    /* the styles for the section */
-    section{
-        float: left;
-        width:100%;
-        height: 100%;
-    }
-    #registration_form{
-        float: left;
-        width:100%;
-    }
-    #submit_form{
-        float: left;
-        width:100%;
-    }
-    #booking_form{
-        float: left;
-        width:120%;
-    }
-    main {
-        flex-wrap: wrap;
-        /*width:100%;*/
-        height: 1em;
-        flex-direction: row;
-    }
-
-    header {
-        display: flex;
-        text-align: center;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    form {
-        display: inline-block;
-        height: 100%;
-        width: 65%;
-        justify-content: center;
-        margin-right: 0;
-    }
-
-
-    br {
-        clear: both;
-    }
-
-    /* Registration Input Design*/
-    #registration_form input
-    {
-        width: 15em;
-        margin-left: .5em;
-        margin-bottom: .5em;
-    }
-    #registration_form select
-    {
-        margin-left: .5em;
-        margin-bottom: .5em;
-    }
-
-    #registration_form label
-    {
-        float: left;
-        width: 12em;
-        text-align: right;
-    }
-
-    footer p {
-        display: block;
-    }
-    #mobile {
-    display: block;
-    }
-    
-
+	header img {
+		float: none;
+	}
+	header {
+		text-align: center;
+	}
+	section {
+		float: none;
+		width: 95%;
+	}
+	aside {
+		float: none;
+		padding-right: 2.5%;
+		width: 95%;
+	}
+	article img {
+		max-width: 30%;
+	}
+	#speakers {
+		-moz-column-count: 2;
+		-webkit-column-count: 2;
+		column-count: 2;
+	}
+	#nav_menu {
+		display: none;
+	}
+	#mobile_menu {
+		display: block;
+	}
+	.slicknav_menu {
+		background-color: #343a40 !important;
+	}
 }
-/**********************************************************************************************************************
-Up to 479px
-************************************************************************************************************************/
+/* Tablet */
+@media only screen and (max-width: 768px) {
+	main {
+		width: 100%;
+	}
+	aside {
+		width: 100%;
+	}
+	#spine {
+		margin: 1em 0 0 0;
+	}
+	#vid {
+		margin: 1em 0 0 0;
+	}
+	nav a {
+		width: 100%;
+	}
+	h1 {
+		font-size: 3em;
+	}
+
+	footer ul li a {
+		width: 100%;
+	}
+}
+/* Phone */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+	#spine {
+		height: 18.75em;
+		width: 25em;
+	}
+	iframe {
+		width: 25em;
+		height: 18.75em;
+	}
+	h1 {
+		font-size: 2em;
+	}
+
+	#art1 h4 {
+		margin: 0;
+		font-size: 1.2em;
+	}
+	#art2 h4 {
+		margin: 0;
+		font-size: 1.2em;
+	}
+	#art3 h4 {
+		margin: 0;
+		font-size: 1.2em;
+	}
+	footer ul li a {
+		width: 100%;
+		display: block;
+	}
+}
+/* mobile portrait to mobile landscape */
 @media only screen and (max-width: 479px) {
-    body {
-        width: 100%;
-        overflow-x: hidden;
-        font-family: "Roboto Material Black", monospace;
-        clear-after: bottom;
-        margin: 0;
-
-    }
-    #nav h1 {
-        font-size: 2.5em;
-    }
-
-    #nav h3 {
-        font-size: 1.20em;
-    }
-
-    .zeal {
-        float: left;
-        color: #f2d3e9;
-        text-align: left;
-        text-decoration: none;
-        font-size: 5em;
-        padding: 0.25em;
-        margin-bottom: 0.3em;
-        border: 0;
-    }
-
-    section h1 {
-        font-size: 250%;
-        color: #202636;
-        padding: .5em 0 .25em 0;
-        margin: 0;
-    }
-
-    section h3 {
-        font-size: 120%;
-        color: #202636;
-        padding: 5em;
-        text-align: center;
-    }
-
-    /* the styles for the section */
-
-
-    main {
-        flex-wrap: wrap;
-        width: 100%;
-        flex-direction: row;
-    }
-
-
-    section{
-        float: left;
-        width:100%;
-        height: 100%;
-    }
-    #registration_form{
-        float: left;
-        width:100%;
-    }
-    #submit_form{
-        float: left;
-        width:100%;
-    }
-    #booking_form{
-        float: left;
-        width:120%;
-    }
-    header {
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        margin-right: 20px;
-    }
-
-
-    fieldset {
-        flex-wrap: wrap;
-        margin: 20%;
-        padding: .5em 1em;
-        border-bottom: 2px solid #202636;
-        border-top: 2px solid #202636;
-        border-right: 2px solid #202636;
-        border-left: 2px solid #202636;
-    }
-
-    legend {
-        flex-wrap: wrap;
-        color: #202636;
-        font-weight: bold;
-        font-size: 125%;
-        margin-bottom: .5em;
-    }
-
-    label, input {
-        word-wrap: break-word;
-        font-size: 100%;
-        justify-content: center;
-        text-align: center;
-    }
-
-    input:required, input[required] {
-        border: 2px solid #202636;
-    }
-
-    input:valid {
-        border: 1px solid #202636;
-    }
-
-    input:invalid {
-        box-shadow: none;
-        border: 2px solid #202636;
-    }
-
-    input[type="radio"]:checked {
-        box-shadow: 0 0 0 3px orange;
-    }
-
-    /* used to create a new line  */
-    br {
-        clear: both;
-    }
-
-    /* Registration Input Design*/
-    #registration_form input {
-        width: 15em;
-        margin-left: .5em;
-        margin-bottom: .5em;
-    }
-
-    #registration_form select {
-        margin-left: .5em;
-        margin-bottom: .5em;
-    }
-
-    #registration_form label {
-        float: left;
-        width: 10em;
-        text-align: right;
-    }
-
-    /* submit Form Design*/
-    #submit_form input {
-        margin-left: .5em;
-        width: 15.25em;
-        margin-bottom: .5em;
-    }
-
-    #submit_form label {
-        float: left;
-        width: 2em;
-        text-align: right;
-    }
-    footer{
-        display: none;
-    }
-
+	body {
+		font-size: 90%;
+	}
 }
-
-    
-

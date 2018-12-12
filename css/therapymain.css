@@ -13,7 +13,7 @@ html{
     margin: 0;
 
     color: #1f2833;
-    }
+}
 body {
     height: 100%;
     width: 100%;
@@ -28,8 +28,8 @@ h1{
 h2, h3 {
     color:#444444;
     font-style: italic;
-margin:1%;
-font-variant-caps: all-small-caps;}
+    margin:1%;
+    font-variant-caps: all-small-caps;}
 
 header{
 
@@ -45,7 +45,7 @@ nav {
     background-color: #1f2833;
     display: compact;
     margin-top: 0;
-}	
+}
 nav a{
     float: right;
     color: #f2f2f2;
@@ -73,10 +73,7 @@ nav a:hover{
 
 }
 
-#spine{
-	width: 462px;
-	margin: 50px 200px;
-}
+
 .hero {
     padding-bottom: 30px;
     justify-content: center;
@@ -102,66 +99,34 @@ main{
     outline: #444444 5px double;
 }
 article{
-  height: 160em;
-  display:block;
+    height: 160em;
+    display:block;
 }
 table{
-  margin: 2em;
-  border-spacing: 0;
-  border: 2px solid yellow;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,.16);
-  border-radius: 2px;
+    margin: 2em;
+    border-spacing: 0;
+    border: 2px solid yellow;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.16);
+    border-radius: 2px;
 
 }
 th{
-  background: lightskyblue;
-  color: #fff;
-  border: 2px solid yellow;
-  padding-left: .3em;
-  padding-right: .3em;
+    background: lightskyblue;
+    color: #fff;
+    border: 2px solid yellow;
+    padding-left: .3em;
+    padding-right: .3em;
 }
 
 
 #vid{
-	width: 462px;
-		margin: 50px 180px;
+    width: 462px;
+    margin: 50px 180px;
 }
 td{
     border: 1px solid yellow;
 }
-#art1{
-    background-color: darkslateblue;
-    padding:3%;
-    margin:1%;
-    height: 20em;
-}
-#art1 h4{
-	margin: 0 0 1em 0;
-	font-size: 2em;
-}
 
-
-
-#art2{
-    background-color: darkgoldenrod;
-    padding:3%;
-    margin:1%;
-    height: 35em;
-}
-#art2 h4{
-	margin: 0 0 1em 0;
-	font-size: 2em;
-}
-#art3{
-   background-color: lightskyblue;
-    padding: 3%;
-    margin: 1%;
-    height: 35em;
-}
-#art3 h4{
-	margin: 0 0 1em 0;
-	font-size: 2em;
-}
 aside {
     width:30%;
     float: right;
@@ -191,7 +156,7 @@ aside section img{
     height: 18em;
 }
 footer{
-  display: block;
+    display: block;
     clear:both;
     height:10%;
     width:100%;
@@ -205,7 +170,7 @@ footer ul {
     display: inline-flex;
 }
 footer ul li {
-box-sizing: border-box;
+    box-sizing: border-box;
     list-style: none;
     margin: 1em;
     width: 15%;
@@ -230,72 +195,4 @@ footer ul li a:visited {
 }
 /* table */
 
-/*Media Queries */
-
-
-/*Tablet */
-@media only screen and (max-width: 768px) {
-	main{
-		width:100%;
-		
-	}
-	aside {
-		
-		width:100%;
-	}
-	#spine {
-		margin: 1em 0 0 0 ;
-	}
-	#vid{
-		margin: 1em 0 0 0;
-	}
-	nav a {
-		width: 100%;
-	}
-	
-	h1 {
-		font-size: 3em;
-	}
-	footer ul li a {
-		width: 100%;
-		
-	}
-		
-}
-
-/*Phone */
-
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-	
-	#spine {
-		height: 18.750em;
-		width: 25em ;
-	}
-	iframe {
-		width: 25em;
-		height:18.750em; 	
-	}
-	h1{
-		font-size: 2em;
-	}
-	#art1 h4{
-	margin: 0;
-	font-size: 1.2em;
-	}
-	#art2 h4{
-	margin: 0;
-	font-size: 1.2em;
-	}
-	#art3 h4{
-	margin: 0;
-	font-size: 1.2em;
-	}
-  footer ul li a{
-		width: 100%;
-		display: block;
-	}
-		
-}
+/*Media Queries */}

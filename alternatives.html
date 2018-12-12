@@ -2,97 +2,121 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <!-- Favicon -->
-    <title>Alternatives</title>   
-    <!--<link rel="icon" href="favicon.ico"> -->
-
-    <!-- Core Stylesheet -->
-        <link href="css/main.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ZEAL holistic chiropractic</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
 </head>
 <body>
 <header>
-	<nav>
-    <a href="#">Staff</a>
-    <a href="#">Alternatives</a>
-    <a href="#">Treatments</a>
-    <a href="#">Therapy</a>
-    <a href="#">Book Now!</a>
-    <a class="active zeal" href="#home">ZEAL</a>
-	</nav>
-	
-    <section class="hero">
-        <img src="img/ban6.jpg">
-        <h1>Complementary and Alternative Medicine</h1>
-        <h3>Most people you meet don't have a family acupuncturist that they call when back pain is a problem, or reflexologist when having trouble urinating, or a Aromatherapist when asthma flares. Although these sound weird to most people, alternative medical practices are gaining traction in the U.S. Here is some articles on popular alternative physical therapies working their way into the healthcare system.</h3>
-        <h3>Alternative Medicine often refered to as "CAM" or Complementary and Alternative Medicineis any of a range of medical therapies that are not regarded as orthodox by the medical profession, such as herbalism, homeopathy, and acupuncture. There are many more that are not as popular, and some that you have probably used. Often these therapies are extremely young or dating back many years, which means that they have are usually not studied. This lack of research means that there is often no evidence that these therapies work, and therefore should primarily be used as a last resort not a first choice for curing an ailment.</h3>
+    <h1>Complementary and Alternative Treatments</h1>
+    <section class="hero hero-alt">
+        <img src="images/ban6.jpg">
         <!--<h6>yes i will change the colors</h6> -->
     </section>
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html" class="current">Home</a></li>
+            <li><a href="form.html">Book Now!</a></li>
+            <li><a href="staff.html">Staff</a></li>
+            <li><a href="#">Treatments</a>
+                <ul>
+                    <li><a href="alternatives.html">Alternatives</a></li>
+                    <li><a href="therapy.html">Therapy</a></li>
+                    <li><a href="mental.html">Mental Health</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+
 </header>
 
-<main>
-	<!-- First Article in Main -->
-<article id="art1">
-    <h4>Types of Complementary and Alternative Medicine</h4>
-    <p>Many different areas or fields make up the practice of complementary and alternative medicine (CAM). Many parts of one field may overlap with the parts of another field, so the lines can sometimes be blurred.</p>
-    <p>Examples of CAM include: </p>
-    <ul>
-		<li>Acupuncture</li>
-		<li>Homeopathy</li>
-		<li>Chiropractic medicine</li>
-		<li>Massage</li>
-		<li>Herbal Medicine</li>
-		<li>Electromagnetic Therapy</li>
-		<li>Meditation</li>
-		<li>Hypnosis</li>
-		<li>And Many more..</li>
-    </ul>
-    <p>Click <a href="https://www.hopkinsmedicine.org/healthlibrary/conditions/complementary_and_alternative_medicine/types_of_complementary_and_alternative_medicine_85,P00189"> here</a> to read more about the many different types of CAM available.</p>
-</article>
-	<!-- Second Article in Main -->
-<article id="art2">
-    <h4>Modern Acupunture</h4>
-    <p>Acupuncture is a technique in which practitioners stimulate specific points on the body—most often by inserting thin needles through the skin. It is one of the practices used in traditional Chinese medicine.</p>
-    <p>Results from a number of studies suggest that acupuncture may help ease types of pain that are often chronic such as low-back pain, neck pain, and osteoarthritis/knee pain. It also may help reduce the frequency of tension headaches and prevent migraine headaches. Therefore, acupuncture appears to be a reasonable option for people with chronic pain to consider. However, clinical practice guidelines are inconsistent in recommendations about acupuncture.</p>
-    <p>Some of these chronic pain conditions include: </p>
-    <ul>
-		<li>Lower-Back Pain</li>
-		<li>Neck Pain</li>
-		<li>Osteoarthritis</li>
-		<li>Headaches</li>
-		<li>And Many more..</li>
-    </ul>
-    
-	<p>Click<a href="https://nccih.nih.gov/health/acupuncture/introduction"> here</a> to read more</p>
 
-</article>
-	<!-- Third Article in Main -->
-<article id="art3">
-	<h4>Homeopathy</h4>
-	<p>Homeopathy, also known as homeopathic medicine, is a medical system that was developed in Germany more than 200 years ago. It’s based on two unconventional theories: </p>
-	<ul>
-		<li>“Like cures like”—the notion that a disease can be cured by a substance that produces similar symptoms in healthy people.</li>
-		<li>“Law of minimum dose”—the notion that the lower the dose of the medication, the greater its effectiveness. Many homeopathic products are so diluted that no molecules of the original substance remain.</li>
-	</ul>
-	<p>Homeopathic products come from plants such as : </p> 
-	<ul>
-		<li>Red onion</li>
-		<li>Arnica (Mountain Herb)</li>
-		<li>Poison Ivy</li>
-		<li>Belladonna (deadly Nightshade)</li>
-		<li>Stinging nettle</li>
-		<li>minerals (such as white arsenic)</li>
-		<li>animals (such as crushed whole bees)</li>
-	</ul>
-	<p>Click <a href="https://nccih.nih.gov/health/homeopathy"> here</a> to read more</p>
-</article>
+  <section class="opener">
+      <h2>Introducing Alternative Treatments</h2>
+    <p class="alt-text">Most people you meet don't have a family acupuncturist that they call when back pain is a problem, or reflexology when having trouble urinating, or a Aromatherapist when asthma flares. Although these sound weird to most people, alternative medical practices are gaining traction in the U.S. Here is some articles on popular alternative physical therapies working their way into the healthcare system.</p>
+      <p class="alt-text">Alternative Medicine often referred to as "CAM" or Complementary and Alternative Medicines any of a range of medical therapies that are not regarded as orthodox by the medical profession, such as herbalism, homeopathy, and acupuncture. There are many more that are not as popular, and some that you have probably used. Often these therapies are extremely young or dating back many years, which means that they have are usually not studied. This lack of research means that there is often no evidence that these therapies work, and therefore should primarily be used as a last resort not a first choice for curing an ailment.</p>
+  </section>
+    <!-- First Article in Main -->
+<section class="container">
+<section class="art1">
+    <article>
+        <h2 class="say-it">Our CAM Offerings</h2>
+        <p>Many different areas or fields make up the practice of complementary and alternative medicine (CAM). Many parts of one field may overlap with the parts of another field, so the lines can sometimes be blurred.</p>
+        <p>Examples of CAM include: </p>
+        <ul>
+            <li>Acupuncture</li>
+            <li>Homeopathy</li>
+            <li>Chiropractic medicine</li>
+            <li>Massage</li>
+            <li>Herbal Medicine</li>
+            <li>Electromagnetic Therapy</li>
+            <li>Meditation</li>
+            <li>Hypnosis</li>
+            <li>And Many more..</li>
+        </ul>
+        <p>Click <a href="https://www.hopkinsmedicine.org/healthlibrary/conditions/complementary_and_alternative_medicine/types_of_complementary_and_alternative_medicine_85,P00189"> here</a> to read more about the many different types of CAM available.</p>
+    </article>
+   </section>
+    <!-- Second Article in Main -->
+<section class="art2">
+    <article>
+        <h2 class="say-it">Modern Acupuncture: A Primer</h2>
+        <p>Acupuncture is a technique in which practitioners stimulate specific points on the body—most often by inserting thin needles through the skin. It is one of the practices used in traditional Chinese medicine.</p>
+        <p>Results from a number of studies suggest that acupuncture may help ease types of pain that are often chronic such as low-back pain, neck pain, and osteoarthritis/knee pain. It also may help reduce the frequency of tension headaches and prevent migraine headaches. Therefore, acupuncture appears to be a reasonable option for people with chronic pain to consider. However, clinical practice guidelines are inconsistent in recommendations about acupuncture.</p>
+        <p>Some of these chronic pain conditions include: </p>
+        <ul>
+            <li>Lower-Back Pain</li>
+            <li>Neck Pain</li>
+            <li>Osteoarthritis</li>
+            <li>Headaches</li>
+            <li>And Many more..</li>
+        </ul>
 
-</main>
-<aside>
-	<!-- Changed Some of the headers into h3 from h4 due to size differences. -->
-	<section id="archive">
-	<h4>Post Archive</h4>
-		<!-- First Article in Aside -->
-		<h3>What is Alternative Medicine (Web.MD)</h3>
+        <p>Click<a href="https://nccih.nih.gov/health/acupuncture/introduction"> here</a> to read more</p>
+    </article>
+
+</section>
+    <!-- Third Article in Main -->
+<section class="art3">
+<article>
+        <h2 class="say-it">What is Homeopathy?</h2>
+        <p>Homeopathy, also known as homeopathic medicine, is a medical system that was developed in Germany more than 200 years ago. It’s based on two unconventional theories: </p>
+        <ul>
+            <li>“Like cures like”—the notion that a disease can be cured by a substance that produces similar symptoms in healthy people.</li>
+            <li>“Law of minimum dose”—the notion that the lower the dose of the medication, the greater its effectiveness. Many homeopathic products are so diluted that no molecules of the original substance remain.</li>
+        </ul>
+        <p>Homeopathic products come from plants such as : </p>
+        <ul>
+            <li>Red onion</li>
+            <li>Arnica (Mountain Herb)</li>
+            <li>Poison Ivy</li>
+            <li>Belladonna (deadly Nightshade)</li>
+            <li>Stinging nettle</li>
+            <li>minerals (such as white arsenic)</li>
+            <li>animals (such as crushed whole bees)</li>
+        </ul>
+        <p>Click <a href="https://nccih.nih.gov/health/homeopathy"> here</a> to read more</p>
+    </article>
+</section>
+
+<aside class="bar-aside">
+    <!-- Changed Some of the headers into h3 from h4 due to size differences. -->
+        <h2>Healthy Content from the Web!</h2>
+        <!-- First Article in Aside -->
+        <h3>What is Alternative Medicine (Web.MD)</h3>
         <blockquote>
             Alternative medicine is a term that describes medical treatments that are used instead of... <a href="https://www.webmd.com/balance/guide/what-is-alternative-medicine#1">Read Article</a>
         </blockquote>
@@ -104,30 +128,16 @@
         <!-- Third Article in Aside -->
         <h3>Hypnosis</h3>
         <blockquote>
-			Hypnosis is a therapeutic technique which can help people change their habits, such as quitting smoking. <a href="https://www.apa.org/topics/hypnosis/">Read Article</a>
+            Hypnosis is a therapeutic technique which can help people change their habits, such as quitting smoking. <a href="https://www.apa.org/topics/hypnosis/">Read Article</a>
         </blockquote>
-    </section>
-    <section>
-        <h4>In Beautiful Oakland!</h4>
-        <img src="img/123.png">
-    </section>
-    <section id="social">
-        <h4>Check us out on social media</h4>
-
-    </section>
 </aside>
-<section>
-    <p></p>
 </section>
-  <footer>
-<ul>
-    <li><a href="#">Go To Top</a></li>
-    <li>Disclaimer: Many of these treatment options are not approved by the FDA and may not be covered by your Health Insurance.</li>
-    <li><a href="https://nccih.nih.gov/">National Center for Complementary and Integrative Health</a></li>
-    <li><a href="#">We Want Your Money and We Want It Now - IRS</a></li>
-    <li><a href="#">I-swear-we-are-not-a-cult Ashram and Healing Center: Be Healed With Love</a></li>
-    <li>This practice is approved by the Stab-You With-Needles Society</li>
-</ul>
+
+<footer>
+    <p>&copy; 2018, BRYCE HOECKER GROUP 1</p>
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="js/jquery.slicknav.min.js"></script>
 </body>
 </html>

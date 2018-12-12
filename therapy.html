@@ -2,124 +2,103 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-    <!-- Favicon -->
-    <title>GROUP ONE TEMPLATE </title>
-    <link rel="icon" href="favicon.ico">
-
-    <!-- Core Stylesheet -->
-        <link href="css/therapymain.css" rel="stylesheet">
-        
-        <nav>
-            <a href="#">Staff</a>
-            <a href="#">Alternatives</a>
-            <a href="#">Treatments</a>
-            <a href="therapy.html">Therapy</a>
-            <a href="#">Book Now!</a>
-            <a class="active zeal" href="#home">ZEAL</a>
-
-        </nav>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ZEAL holistic chiropractic</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
 </head>
 <body>
 <header>
-    <section class="hero">
-        <img src="img/ban6.jpg">
-        <h1>Chiropractic Services we offer</h1>
-        <h3>Chiropractic is a health care profession that focuses on the relationship between the body's structure—mainly the spine—and its functioning. </h3>
+    <h1>Complementary and Alternative Treatments</h1>
+    <section class="hero hero-alt">
+        <img src="images/ban6.jpg">
+        <!--<h6>yes i will change the colors</h6> -->
     </section>
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html" class="current">Home</a></li>
+            <li><a href="form.html">Book Now!</a></li>
+            <li><a href="staff.html">Staff</a></li>
+            <li><a href="#">Treatments</a>
+                <ul>
+                    <li><a href="alternatives.html">Alternatives</a></li>
+                    <li><a href="therapy.html">Therapy</a></li>
+                    <li><a href="mental.html">Mental Health</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+
 </header>
 <main>
-<article id="art1">
-    <h4>Spinal Adjustments</h4>
-    <p>Spinal adjustment/manipulation is a core treatment in chiropractic care, but it is not synonymous with chiropractic. </p>
-    <p>Chiropractors commonly use other treatments in addition to spinal manipulation, and other health care providers (e.g., physical therapists or some osteopathic physicians) may use spinal manipulation.</p>
-    <table class="rwd-table">
-  <tr>
-    <th>Insurance Providers</th>
-    <th>Package No.1 </th>
-    <th>Package No.2 </th>
-    <th>Package No.3 </th>
-  </tr>
-  <tr>
-    <td data-th="Insurance">Insurance 1</td>
-    <td data-th="package1">$30</td>
-    <td data-th="package2">$190</td>
-    <td data-th="package3">$310</td>
-  </tr>
-  <tr>
-    <td data-th="Insurance">Insurance 2</td>
-    <td data-th="package1">$65</td>
-    <td data-th="package2">$110</td>
-    <td data-th="package3">$250</td>
-  </tr>
-  <tr>
-    <td data-th="Insurance">Insurance 3</td>
-    <td data-th="package1">$80</td>
-    <td data-th="package2">$150</td>
-    <td data-th="package3">$230</td>
-  </tr>
-  <tr>
-    <td data-th="Insurance">No Insurance</td>
-    <td data-th="package1">$80</td>
-    <td data-th="package2">$160</td>
-    <td data-th="package3">$240</td>
-  </tr>
-</table>
-</article>
+    <article id="art1">
+        <h4>Spinal Adjustments</h4>
+        <p>Spinal adjustment/manipulation is a core treatment in chiropractic care, but it is not synonymous with chiropractic. </p>
+        <p>Chiropractors commonly use other treatments in addition to spinal manipulation, and other health care providers (e.g., physical therapists or some osteopathic physicians) may use spinal manipulation.</p>
+        <table class="rwd-table">
+            <tr>
+                <th>Insurance Providers</th>
+                <th>Package No.1 </th>
+                <th>Package No.2 </th>
+                <th>Package No.3 </th>
+            </tr>
+            <tr>
+                <td data-th="Insurance">Insurance 1</td>
+                <td data-th="package1">$30</td>
+                <td data-th="package2">$190</td>
+                <td data-th="package3">$310</td>
+            </tr>
+            <tr>
+                <td data-th="Insurance">Insurance 2</td>
+                <td data-th="package1">$65</td>
+                <td data-th="package2">$110</td>
+                <td data-th="package3">$250</td>
+            </tr>
+            <tr>
+                <td data-th="Insurance">Insurance 3</td>
+                <td data-th="package1">$80</td>
+                <td data-th="package2">$150</td>
+                <td data-th="package3">$230</td>
+            </tr>
+            <tr>
+                <td data-th="Insurance">No Insurance</td>
+                <td data-th="package1">$80</td>
+                <td data-th="package2">$160</td>
+                <td data-th="package3">$240</td>
+            </tr>
+        </table>
+    </article>
     <article id="art2">
-    <h4>Spinal Decompression Therapy</h4>
-    <p>Spinal decompression therapy is a modern, non-surgical traction procedure that effectively treats low back, neck, and radiating leg and arm pain.</p>
-    <p>This type of traction is very successful in relieving pain associated with spinal disc herniation, degenerative spinal discs, and facet joint syndromes. .</p>
-    <p>Spinal decompression therapy decompresses spinal discs and facet joints by utilizing traction, distraction, and body positioning.</p>
-	<div id="vid">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/0PhZOJ4DDkA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	</div>
-	</article>
-        <article id="art3">
+        <h4>Spinal Decompression Therapy</h4>
+        <p>Spinal decompression therapy is a modern, non-surgical traction procedure that effectively treats low back, neck, and radiating leg and arm pain.</p>
+        <p>This type of traction is very successful in relieving pain associated with spinal disc herniation, degenerative spinal discs, and facet joint syndromes. .</p>
+        <p>Spinal decompression therapy decompresses spinal discs and facet joints by utilizing traction, distraction, and body positioning.</p>
+        <div id="vid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0PhZOJ4DDkA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </article>
+    <article id="art3">
         <h4>Cold Laser Therapy</h4>
-    <p>Cold Laser Therapy or Low Level Laser Therapy (LLLT) is a treatment that utilizes specific wavelengths of light to interact with tissue and is thought to help accelerate the healing process. </p>
-    <p>  It can be used on patients who suffer from a variety of acute and chronic conditions in order to help eliminate pain, swelling, reduce spasms and increase functionality.</p>
-	<img id = "spine"src="img/clt.jpg">
-	
-</article>
-   </main>
-<aside>
-    <section id="archive">
-        <h4>Post Archive</h4>
-       <h4>Chiropractic Service number 4</h4>
-        <blockquote>
-            Click this article to view more!
-        </blockquote>
-        <h4>Chiropractic Service number  5</h4>
-        <blockquote>
-            Click this article to view more!
-        </blockquote>
-        <h4>Chiropractic Service number 6</h4>
-        <blockquote>
-            Click this article to view more!
-        </blockquote>
-    </section>
-    <section>
-        <h4>In Beautiful Oakland!</h4>
-        <img src="img/123.png">
-    </section>
-    <section id="social">
-        <h4>Check us out on social media</h4>
+        <p>Cold Laser Therapy or Low Level Laser Therapy (LLLT) is a treatment that utilizes specific wavelengths of light to interact with tissue and is thought to help accelerate the healing process. </p>
+        <p>  It can be used on patients who suffer from a variety of acute and chronic conditions in order to help eliminate pain, swelling, reduce spasms and increase functionality.</p>
+        <img id = "spine" src="images/clt.jpg" alt="man getting cold laser therapy">
 
-    </section>
-</aside>
-<section>
-    <p></p>
-</section>
-  <footer>
-<ul>
-    <li><a href="#">GO UP TOP</a></li>
-    <li>Disclaimer: Blabby blabby blab Blabby blabby blab Blabby blabby blab</li>
-    <li><a href="#">National Medical Agents</a></li>
-    <li><a href="#">We Want Your Money and We Want It Now - IRS</a></li>
-    <li><a href="#">I-swear-we-are-not-a-cult Ashram and Healing Center: Be Healed With Love</a></li>
-    <li>This practice is approved by the Stab-You With-Needles Society</li>
-</ul>
-  </footer>
+    </article>
+</main>
+<footer>
+    <p>&copy; 2018, ADRIAN OBERES GROUP 1</p>
+</footer>
 </body>
 </html>
