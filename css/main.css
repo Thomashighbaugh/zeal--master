@@ -169,6 +169,113 @@ section ul {
 section li {
 	padding-bottom: 0.35em;
 }
+/* ********************************************************************************************************************
+STYLE FOR FORM
+NOTE: THIS STYLING IS DONE WITH ELEMENTS FROM FLEX BOX AND FEATURES THE SLICKNAV USED ELSEWHERE
+*********************************************************************************************************************** */
+/* the styles for the form in section */
+.stylesection {
+	float: left;
+	padding: 0px 10px 20px 20px;
+    margin-left: 15%;
+	width: 65%;
+	/*float: right;
+	padding: 0 2.5% 20px 2.5%;*/
+}
+.stylessection section h1{
+	font-size: 250%;
+	color: #800000;
+	padding: .5em 0 .25em 0;
+	margin: 0em;
+    text-align: left;
+}
+.stylessection section h3{
+	font-size: 120%;
+	color: #800000;
+	padding-bottom: 5em;
+	margin: 0em;
+}
+
+.styleform form {
+	text-align: center;
+    margin-top: 0%;
+    display: inline-block;
+    height: 0px;
+    float: left;
+}
+fieldset {
+   /* margin-top: 1em;*/
+    margin-bottom: .5em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-right: 1em;
+    padding-left: 1em;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+legend {
+    color: #081B2A;
+    font-weight: bold;
+    font-size: 125%;
+    margin-bottom: .5em;
+}
+label, input, select {
+	font-size: 100%;
+}
+input:required, input[required] {
+	border: 2px solid #800000;
+}
+input:valid {
+	border: 1px solid black;
+}
+input:invalid {
+	box-shadow: none;
+    border: 2px solid #800000;
+}
+input[type="radio"]:checked{
+    box-shadow: 0 0 0 3px orange;
+}
+
+/* used to create a new line  */
+br {
+    clear: both;
+}
+
+/* Registration Input Design*/
+#registration_form input
+{
+    width: 15em;
+    margin-left: .5em;
+    margin-bottom: .5em;
+}
+#registration_form select
+{
+    margin-left: .5em;
+    margin-bottom: .5em;
+}
+
+#registration_form label
+{
+    float: left;
+    width: 12em;
+    text-align: right;
+}
+/* submit Form Design*/
+#submit_form input {
+    margin-left: .5em;
+	width: 10em;
+    margin-bottom: .5em;
+}
+
+#submit_form label
+{
+    float: left;
+    width: 2em;
+    text-align: right;
+}
+
 /* the styles for the article */
 article {
 	padding: 0.5em 0;
@@ -226,9 +333,6 @@ footer p {
 }
 #mobile_menu {
 	display: none;
-}
-form {
-	text-align: right;
 }
 #spine {
 	width: 462px;
